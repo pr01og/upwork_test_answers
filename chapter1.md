@@ -204,7 +204,7 @@ Answers:
 • <yourLibrary color="red"/>
 • <yourLibrary.whatColorlslt color="red"/>
 
-21.Why would the following code snippet not compile successfully? 
+21. Why would the following code snippet not compile successfully? 
 if (mangoList instanceof List<Mango>) { System.out.println(«true»); }
 Answers:
 • It is unknown whether mangoList is a List type.
