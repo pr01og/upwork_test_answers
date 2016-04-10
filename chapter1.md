@@ -1,17 +1,24 @@
 # UPWORK JAVA TEST V3 2016
 
 1. Consider the following code:
+
 public class Jam {
+
   public void apple(int i, String s) {
+  
   }
+  
   //ABC
+  
 }
+
 Choose possible valid code replacements of «//ABC» among the choices:
+
 Answers:
-⋅⋅* public void apple(String s, int i) {}
-• public int apple(int i, String s) {}
-• public void apple(int i, String mystring) {}
-• public void Apple(int i, String s) {}
+* public void apple(String s, int i) {}
+* public int apple(int i, String s) {}
+* public void apple(int i, String mystring) {}
+* public void Apple(int i, String s) {}
 
 2. Which of these is not an event listener adapter defined in the java.awt.event package?
 Answers:
