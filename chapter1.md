@@ -8,7 +8,7 @@ public class Jam {
 }
 Choose possible valid code replacements of «//ABC» among the choices:
 Answers:
-• public void apple(String s, int i) {}
+⋅⋅*public void apple(String s, int i) {}
 • public int apple(int i, String s) {}
 • public void apple(int i, String mystring) {}
 • public void Apple(int i, String s) {}
