@@ -21,7 +21,7 @@ Answers:
 * extension MyClass: MyProtocol { }
 * extension MyClass, MyProtocol { }
 
-4. Which one is the correct keyword for defining a constant in Swift?
+4. Which one is the correct keyword for defining a constant in Swift? ( or To declare a constant in Swift you would use: )
 Answers:
 * const
 * contant
@@ -135,11 +135,13 @@ Answers:
 * func swap<T>( a: T, b: T) { let temp = a a = b b = temp }
 
 21. If we have a class named MyClass with a nested enum called Status, declared like so:
+```
 class MyClass {
     enum Status {
         case On, Off
     }
 }
+```
 How would one indicate that a variable is an enum of type Status outside the context of MyClass?
 Answers:
 * var status: MyClass.Status = .On
@@ -292,13 +294,6 @@ b. By strong reference
 c. By unowned reference
 d. By copy
 
-43. What set of keywords is most comonly used to iterate over a collections of items?
-Answers:
-a. for each
-b. switch case
-c. do while
-d. for in
-
 44. To declare a function in swift you would use what keyword?
 Answers:
 a. function
@@ -330,46 +325,6 @@ a. Example-Bridging-Swift.h
 b. Example-Swift.h
 c. Example-Bridging-ObjectiveC.h
 d. Example-Bridging-Header.h
-
-49. What is used like a tuple to access arguments in Abbreviated Swift Closure syntax?
-Answers:
-a. $
-b. *
-c. &
-d. @
-e. ~
-
-50. Let’s assume “numbers” is an array of unsorted integers. Which of these could be used to sort numbers?
-Answers:
-a. numbers.sort({$0, $1 in $0 > $1})
-b. numbers.sort({$1 > $2})
-c. numbers.sort({$0 > $1})
-d. numbers.sort({$1 > $2})
-
-51. How could the following closure be rewritten to use shorthand arguments? S2 ? )>
-Answers:
-a. <reversed = sorted(names, {$0, $1 in $0 > $1})>
-b. <reversed = sorted(names, {$0 > $1})>
-c. <reversed = sorted(names, {$0, $1})>
-d. <reversed = sorted({$0 > $1})>
-
-52. How could you call the following function that takes a closure as an argument using trailing closure syntax?
-()) {
-	// function body goes here
-}
-Answers:
-a. <funcWithClosure({
-// closures body goes here
-})>
-b. <func funcWithClosure({
-// closures body goes here
-})>
-c. <funcWithClosure() {
-// closures body goes here
-}>
-d. <funcWithClosure{
-// closures body goes here
-}>
 
 53. What is the name that represents a character in Swift?
 Answers:
@@ -418,120 +373,12 @@ d. protocol SomeProtocol{
 	var second: Int {get}
 }
 
-59. How could we cast the following array into an NSArray that accessed the NSArray method:
-<let arr = ["1", "2", "3"]
-Answers:
-a. arr.toNSArray.componentsJoinedByString(",")
-b. NSArray(arr).componentsJoinedByString(",")
-c. (arr as NSArray).componentsJoinedByString(",")
-d. (arr bridge NSArray).componentsJoinedByString(",")
-
-61. How could one declare a Swift Array type that can store any type of class object?
-Answers:
-a. var arr: [id] = []
-b. var arr: [AnyObject] = []
-c. [AnyObject] arr = []
-d. var arr = NSArray<AnyObject>()
-
-62. Which of the following statements could be used to determine if a given variable is of String type?
-Answers:
-a. if String.hierarchy(uknownVariable) {}
-b. if uknownVariable is String {}
-c. if uknownVariable: String {}
-d. if (String) uknownVariable {}
-
 63. How could we create a subclass of the Structure, CGRect?
 Answers:
 a. struct MyRect: CGRect {}
 b. struct CGRect(MyRect) {}
 c. You can not subclass a Structure
 d. struct MyRect extends CGRect {}
-
-//--//--//--//--//--//--//--
-
-1. Which of the following structures has both computed and stored properties?
-Answers:
-* struct Rect { var origin = CGPointZero var center: CGPoint { get { // } set { // } } }
-* struct Rect { var center: CGPoint { get { // } set { // } } }
-* struct Rect { let origin = CGPointZero }
-* struct Rect { var origin = CGPointZero var center: CGPointMake(0,0) }
-
-2. Which of these statements declares cityArray as a mutable array?
-Answers:
-var cityArray = [«Portland»,»San Francisco»,»Cupertino»]
-
-7. What is the name of the Swift language feature that Objective-C Blocks are translated into?
-Answers:
-* Lambda
-* Callback
-* Closure
-* Selector
-
-8. Which keyword is used on a function in an enumeration to indicate that the function will modify ‘self’?
-Answers:
-* modifier
-* mutating
-* mutable
-* mod
-* mut
-
-9. Which is correct for Enumerations?
-Answers:
-* Enumerations can define initializers.
-* Enumerations cannot conform to protocols.
-* Enumerations cannot conform to protocols.
-
-10. Which one creates a dictionary with a key type of Integer and value of String?
-Answers:
-* var dict:[Int: String] = [«one»:1]
-* var dict: [Int: String] = [1:»one»]
-* var dict: [String: Int] = [1:»one»]
-* var dict = [«one»:1]
-
-11. Which of these is a valid definition of a generic function that incorporates inout parameters in Swift?
-Answers:
-* func swap<T>(inout a: T, inout b: T) { let temp = a a = b b = temp }
-* func swap<U,T>(inout a: U, inout b: T) { let temp = a a = b b = temp }
-* func swap<U,T>( a: U, b: T) { let temp = a a = b b = temp }
-* func swap<T>( a: T, b: T) { let temp = a a = b b = temp }
-
-12. Which of these is an appropriate syntax for dispatching a heavy operation to a background thread?
-Answers:
-* dispatch_async(DISPATCH_QUEUE_PRIORITY_BACKGROUND), { self.heavyOperation() })
-* dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), { self.heavyOperation() })
-* DISPATCH_QUEUE_PRIORITY_BACKGROUND({ self.heavyOperation() })
-* dispatch_async({ self.heavyOperation() })
-
-13. Which one is the correct keyword for defining a constant in Swift? ( or To declare a constant in Swift you would use: )
-Answers:
-* const
-* contant
-* final
-* let
-* def
-
-14. If we have a class named MyClass with a nested enum called Status, declared like so:
-class MyClass {
-enum Status {
-case On, Off
-}
-}
-How would one indicate that a variable is an enum of type Status outside the context of MyClass?
-Answers:
-* var status: MyClass.Status = .On
-* var status: Status = .On
-* var status: MyClass<Status> = .On
-* var status: MyClass(Status) = .On
-
-15. Which of the following could be used to indicate the Function Type of the following function:
-func joinStrings(stringOne: String, stringTwo: String) -> String {
-return stringOne + stringTwo
-}
-Answers:
-* func(String, String -> String)
-* (String, String) -> String
-* {String, String} -> String
-* {String, String}(String)
 
 16. Which is correct regarding optional form of the type cast operator (as?)?
 Answers:
@@ -561,13 +408,6 @@ Answers:
 * (arr as NSArray).componentsJoinedByString(“,”)
 * (arr bridge NSArray).componentsJoinedByString(“,”)
 
-20. Which of the following statements could be used to determine if a given variable is of String type?
-Answers:
-* if String.hierarchy(unknownVariable) { }
-* if unknownVariable is String { }
-* if unkownVariable: String { }
-* if (String)unknownVariable { }
-
 21. What set of keywords is most commonly used to iterate over a collections of items?
 Answers:
 * for each
@@ -581,13 +421,6 @@ Answers:
 * <if string {…}>
 * <if string as String {…}>
 * <if let string {…}>
-
-23. What attribute can be used to allow a protocol to contain optional functions and to be used in ObjC?
-Answers:
-* objective_bridge
-* ObjC
-* _objc
-* @objc
 
 24. Choose the answer that declares an optional closure.
 Answers:
@@ -650,20 +483,6 @@ Answers:
 * A Function is a named Closure
 * Closures can’t be used as arguments, Functions can
 
-31. How do closures capture references to variables by default ?
-Answers:
-* By weak reference
-* By strong reference
-* By unowned reference
-* By copy
-
-32. Which of the following types can be used use as raw value types for an enumeration?
-Answers:
-* Bool
-* Array
-* Int, String, Float
-* Dictionary
-
 33. What are the available arithmetic overflow operators in Swift?
 Answers:
 * op+,op-,op*,op/,op%
@@ -685,19 +504,15 @@ Answers:
 * Function might not have return values
 * Function names might be the same with another but at least one parameter should be different
 
-36. Which of the following could be used to indicate the Function Type of the following function:
-func joinStrings(stringOne: String, stringTwo: String) -> String { return stringOne + stringTwo }
-Answers:
-* func(String, String -> String)
-* (String, String) -> String
-* {String, String} -> String
-* {String, String}(String)
-
 37. In the below text, what type of return does the function ‘area’ give?
+```
 Class Square: NamedShape {
 var sideLength: Double
-func area() -> Double { return sideLength*sideLength } }
-
+	func area() -> Double { 
+		return sideLength*sideLength 
+	} 
+}
+```
 Answers:
 * Int
 * the area of a square
@@ -705,9 +520,14 @@ Answers:
 * area
 
 38. In the below text, what is the class name?
+```
 Class Square: NamedShape {
 var sideLength: Double
-func area() -> Double { return sideLength*sideLength } }
+	func area() -> Double { 
+		return sideLength*sideLength 
+	} 
+}
+```
 Answers:
 * NamedShape
 * Square
@@ -716,9 +536,14 @@ Answers:
 * sideLength
 
 39. In the below text, what is the name of the class’s only method?
+```
 Class Square: NamedShape {
-var sideLength: Double
-func area() -> Double { return sideLength*sideLength } }
+	var sideLength: Double
+	func area() -> Double { 
+		return sideLength*sideLength 
+	} 
+}
+```
 Answers:
 * sideLength
 * area
@@ -757,7 +582,9 @@ Answers:
 * Objective-C
 
 44. Which of following expressions can be used to rewrite the following UITableView instantiation in Swift
+```
 <UITableView *myTableView = [[UITableView alloc] initWithFrame: CGRectZero style: UITableViewStyleGrouped];>”
+```
 Answers:
 * let myTableView: UITableView = new UITableView(frame: CGRectZero, style: .Grouped);
 * let myTableView: UITableView = UITableView.alloc().init(frame: CGRectZero, style: .Grouped);
@@ -773,10 +600,14 @@ Answers:
 * identicalTo
 
 46. In the bellow text, what is the super class name?
+```
 class Square: NamedShape {
-var sideLenght: Double
-func area() -> Double {
-return sideLenght * sideLenght } }
+	var sideLenght: Double
+	func area() -> Double {
+		return sideLenght * sideLenght 
+	} 
+}
+```
 Answers:
 * Square
 * Double
@@ -785,10 +616,14 @@ Answers:
 * NamedShape
 
 47. In the bellow text, what is the property name?
+```
 class Square: NamedShape {
-var sideLenght: Double
-func area() -> Double {
-return sideLenght * sideLenght } }
+	var sideLenght: Double
+	func area() -> Double {
+		return sideLenght * sideLenght 
+	} 
+}
+```
 Answers:
 * sideLenght
 * Square
@@ -826,20 +661,6 @@ return self*self*self
 }
 }
 
-50. Which of these statements is a valid way to extend the capabilities of our theoretical class, MyClass to conform to protocol MyProtocol?
-Answers:
-* extension MyClass(MyProtocol) { }
-* extension MyClass, prot MyProtocol { }
-* extension MyClass: MyProtocol { }
-* extension MyClass, MyProtocol { }
-
-51. What is the name of the Objective-C Bridging Header given a product module named Example?
-Answers:
-* Example-Bridging-Swift.h
-* Example-Swift.h
-* Example-Bridging-ObjectiveC.h
-* Example-Bridging-Header.h
-
 52. In what queue should all UI code be handled?
 Answers:
 * BackgroundQueue
@@ -847,21 +668,15 @@ Answers:
 * Any Queue
 * MainQueue
 
-53. To declare a function in Swift you would use what keyword?
-Answers:
-* function
-* new func
-* var
-* let
-* func
-
 54. In what order will the following statements appear in the console?
+```
 <
 println(“1”)
 dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
 println(“2”)
 });
 println(“3”)
+```
 Answers:
 * 1/3/2002
 * 3/1/2002
@@ -899,13 +714,6 @@ Answers:
 * potteryBarn
 * name, score
 
-59. What is used to import Objective-C files into Swift?
-Answers:
-* Objective-C classes are automatically imported.
-* Objective-C classes are imported in the Swift file using the class.
-* Objective-C classes are imported via a Bridging Header.
-* Objective-C classes import themselves by declare @SwiftImportable.
-
 60. Which is the correct optional form of a down cast operator?
 Answers:
 * as
@@ -913,118 +721,6 @@ Answers:
 * as!
 * as.
 * as>>
-
-61. Given that we have defined myChar like so :
-let myChar: Character = «b»
-Which code segment can be considered a complete Switch statement and will run without any error?
-Answers:
-* switch myChar { case «a»,»A»: println(«The letter A») case «b»,»B»: println(«The letter A») }
-* switch myChar { case «a»: println(«The letter A») }
-* switch myChar { case «a»: case «A»: println(«The letter A») default: println(«Not the letter A») }
-* switch myChar { case «a»,»A»: println(«The letter A») default: println(«Not the letter A») }
-
-62. What keyword is used to indicate a custom operator that will appear in between two targets, similar to the addition operator in this example?
-var sum = 10 + 10
-Answers:
-* @inter
-* between
-* infix
-* @center
-
-63. Which is the wrong definition of a protocol in Swift?
-Answers:
-* protocol SomeProtocol { var first: Int{ get } }
-* protocol SomeProtocol { var first: Int{ set } }
-* protocol SomeProtocol { var first: Int { get set } }
-* protocol SomeProtocol { var first: Int { get set } var second: Int { get } }
-
-64. Which of these is a valid syntax for iterating through the keys and values of a dictionary?
-let dictionary = [keyOne : valueOne, keyTwo : valueTwo]
-Answers:
-* for (key, value) in dictionary { println(«Key: \(key) Value: \(value)») }
-* for (key, value) in enumerate(dictionary) { println(«Key: \(key) Value: \(value)») }
-* for (key, value) in (dictionary.keys, dictionary.values) { println(«Key: \(key) Value: \(value)») }
-* for (key, value) in dictionary.enumerate() { println(«Key: \(key) Value: \(value)») }
-
-65. Which keyword is used on a function in an enumeration to indicate that the function will modify ‘self’?
-Answers:
-* modifier
-* mutating
-* mutable
-* mod
-* mut
-
-66. Which is correct for Enumerations?
-Answers:
-* Enumerations can define initializers.
-* Enumerations cannot conform to protocols.
-* Enumerations cannot conform to protocols.
-
-67. Which of these could be an appropriate protocol declaration in Swift?
-Answers:
-* @objc protocol someProtocal { optional var first: Int { get } }
-* @objc protocol someProtocal { optional var first: Int { set } }
-* protocol someProtocal { optional var first: Int { get } }
-* protocol someProtocal { var first: Int { set } }
-
-68. In context of a Swift subscript, which of the following is correct?
-Answers:
-* struct MyStruct { var myStr = [String]() subscript (index : Int) -> String{ get{ return myStr[index] } set{ myStr[index] = newValue } } }
-* struct MyStruct { var myStr = [String]() subscript (index : Int) -> Int{ get{ return myStr[index] } set(newValue){ myStr[index] = newValue } } }
-* struct MyStruct { var myStr = [String]() subscript (index : Int) -> String{ get(){ return myStr[index] } set(newValue){ myStr[index] = newValue } } }
-* struct MyStruct { var myStr = [String] subscript (index : Int) -> String{ get(){ return myStr[index] } set(newValue){ myStr[index] = newValue } } }
-
-69. What is the name of the deinitializer in a Class declaration?
-Answers:
-* deinit
-* dealloc
-* release
-
-70. Which is correct regarding Swift enumeration members when they are defined?
-Answers:
-* Members are assigned a default integer value.
-* Members are assigned a random default integer value.
-* Members are not assigned default integer values.
-
-71. Which keyword in the context of a Switch statement is required to force the execution of a subsequent case?
-Answers:
-* fallthrough
-* continue
-* break
-* return
-
-72. What is the type of Swift Enumerations?
-Answers:
-* Reference type
-* Class type
-* Collection type
-* Value type
-
-73. Can enumeration type have methods?
-Answers:
-* Enumerations can have methods associate with them.
-* Enumerations can have only member values.
-
-74. Which of these is not a valid property declaration in Swift?
-Answers:
-* final let x = 0
-* final lazy let x = 0
-* final lazy var x = 0
-* final var x = 0
-
-75. Which one of the below functions definitions is wrong considering Swift language?
-Answers:
-* func haveChar(#string: String, character: Character) -> (Bool)
-* func mean(numbers: Double…) -> Double
-* func minMax(array: [Int]) -> (min: Int, max: Int)?
-* func minMax(array: [Int]) -> (min: Int?, max: Int?)
-
-76. Which keyword is used in Swift when we want a property of a class to initialize when it is accessed for the first time?
-Answers:
-* let
-* var
-* const
-* lazy
 
 79. To loop through a range of the numbers 1-9 without using 9, you would write…
 Answers:
