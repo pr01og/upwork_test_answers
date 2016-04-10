@@ -1,7 +1,7 @@
 # UPWORK JAVA TEST V3 2016
 
 1. Consider the following code:  
-public class Jam {  
+> public class Jam {  
    public void apple(int i, String s) {  
    }  
    //ABC  
