@@ -16,7 +16,7 @@ Answers:
 
 2. Which of these is not an event listener adapter defined in the java.awt.event package?  
 Answers:
-* ___ActionAdapter___
+* __ActionAdapter__
 * MouseListener
 * WindowAdapter
 * FocusListener  
@@ -24,7 +24,7 @@ Answers:
 3. Which distributed object technology is most appropriate for systems that consist of objects written in different languages and that execute on different operating system platforms?  
 Answers:
 * RMI
-* ___CORBA___
+* __CORBA__
 * COBRA
 * DCOM
 * COM  
