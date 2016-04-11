@@ -136,20 +136,20 @@
   Answers:
   * always XYZ
   * always ZYX
-  * any of the following: XYZ, XZY, YXZ, YZX, ZXY, ZYX
+  * **any of the following: XYZ, XZY, YXZ, YZX, ZXY, ZYX**
   * any of the following: XYZ, ZYX
 
 16. Which of the following require explicit try/catch exception handling by the programmer?
   Answers:
   * Accessing a method in another class
-  * Attempting to open a network socket
-  * Attempting to open a file
+  * **Attempting to open a network socket**
+  * **Attempting to open a file**
   * Traversing each member of an array
 
 17. What protocol is used by the DatagramSocket class?
   Answers:
   * STCP
-  * UDP
+  * **UDP**
   * TCP
   * FTP
   * None of the above
@@ -170,7 +170,7 @@
   `  }`  
   `}`  
   Answers:
-  * System.out.print(str);
+  * **System.out.print(str);**
   * System.out.print(iOne);
   * System.out.print(iTwo);
   * System.out.print(iArgs);
@@ -178,73 +178,73 @@
 19. What is the output of the given program?
   `public class Test117 {`  
   `  {`  
-  `  System.out.print(«_INIT»);`  
+  `  System.out.print("_INIT");`  
   `  }`  
   `  static {`  
-  `  System.out.print(«_STATIC»);`  
+  `  System.out.print("_STATIC");`  
   `  }`  
   `  Test117() {`  
-  `  System.out.print(«_CONST»);`  
+  `  System.out.print("_CONST");`  
   `  }`  
   `  public static void main(String[] args) {`  
-  `    System.out.print(«_MAIN»);`  
+  `    System.out.print("_MAIN");`  
   `    new Test117();`  
   `  }`  
   `}`  
   Answers:
-  * _STATIC_MAIN_INIT_CONST
+  * **_STATIC_MAIN_INIT_CONST**
   * _STATIC_MAIN_CONST_INIT
   * _INIT_STATIC_CONST_MAIN
   * _STATIC_INIT_CONST_MAIN
 
 20. Assuming the tag library is in place and the tag handler is correct, which of the following is the correct way to use a custom tag in a JSP page?  
   Answers:
-  * <yourLibrary="whatColorlslt" color="red"/>
-  * <yourLibrary:whatColorlslt color="red"/>
-  * <yourLibrary color="red"/>
-  * <yourLibrary.whatColorlslt color="red"/>
+  * `<yourLibrary="whatColorlslt" color="red"/>`
+  * **`<yourLibrary:whatColorlslt color="red"/>`**
+  * `<yourLibrary color="red"/>`
+  * `<yourLibrary.whatColorlslt color="red"/>`
   
 21. Why would the following code snippet not compile successfully?  
-  `if (mangoList instanceof List) { System.out.println("true"); }`
+  `if (mangoList instanceof List<Mango>) { System.out.println("true"); }`
   Answers:
   * It is unknown whether mangoList is a List type.
-  * Generic types are erased before runtime.
+  * **Generic types are erased before runtime.**
   * The instanceof keyword only works on primitive types.
 
 22. Choose all valid forms of the argument list for the FileOutputStream constructor shown below:
   Answers:
-  * FileOutputStream( FileDescriptor fd )
-  * FileOutputStream( String n, boolean a )
+  * **FileOutputStream( FileDescriptor fd )**
+  * **FileOutputStream( String n, boolean a )**
   * FileOutputStream( boolean a )
   * FileOutputStream()
-  * FileOutputStream( File f )
+  * **FileOutputStream( File f )**
 
 23. Which of the following are wrapper classes?  
   Note: There may be more than one right answer.  
   Answers:
   * java.lang.Math
-  * java.lang.Boolean
-  * java.lang.Long
-  * java.lang.Float
+  * **java.lang.Boolean**
+  * **java.lang.Long**
+  * **java.lang.Float**
 
 24. Which of the following illustrates correct synchronization syntax?  
   Answers:
   * public synchronized void Process(void){}
   * public void Process(){ synchronized(this){ } }
   * public void synchronized Process(){}
-  * public synchronized void Process(){}
+  * **public synchronized void Process(){}**
 
 25. With regard to the destroy lifecycle method, identify the correct statements about its purpose or about how and when it is invoked.
   Note: There may be more than one right answer.
   Answers:
-  * It gives the servlet an opportunity to clean up resources.
+  * **It gives the servlet an opportunity to clean up resources.**
   * Like try-catch, it is called upon an exception.
   * It is rarely used but can be called to remove a servlet from memory.
   * It isn’t called if the server crashes.
 
 26. Which of these interfaces are used by implementations of models for JTable?
   Answers:
-  * TableModel
+  * **TableModel**
   * TableColumnModel
   * TableSelectionModel
   * ListModel
@@ -253,13 +253,13 @@
   Answers:
   * HttpSession ses=request.getSession(true);
   * HttpSession ses=getSession(true);
-  * HttpSession ses=request.getSession();
+  * **HttpSession ses=request.getSession();**
   * HttpSession ses=request.getSessionObject(true);
   * HttpSession ses=response.getSession(true);
 
 28. Which of the following symbols are metacharacters supported by the java.util.regex API?
   Answers:
-  * .
+  * **.** (right answer)
   * \
   * @
   * #
@@ -267,18 +267,18 @@
 29. Which of the following code snippets will correctly convert from one time zone to another time zone?  
   Note: There may be more than one right answer.  
   Answers:
-  * `DateFormat formatter = new SimpleDateFormat(«dd/MM/yyyy HH:mm:ss»);
+  * **`DateFormat formatter = new SimpleDateFormat(«dd/MM/yyyy HH:mm:ss»);
   formatter.setTimeZone(TimeZone.getTimeZone(«GMT-8»));
   Date date = formatter.parse(«01/01/2012 05:00:00»);
   System.out.println(formatter.format(date));
   formatter.setTimeZone(TimeZone.getTimeZone(«GMT+5»));
-  System.out.println(formatter.format(date));`
-  * `DateFormat formatter = new SimpleDateFormat(«dd/MM/yyyy HH:mm:ss»);
+  System.out.println(formatter.format(date));`**
+  * **`DateFormat formatter = new SimpleDateFormat(«dd/MM/yyyy HH:mm:ss»);
   formatter.setTimeZone(TimeZone.getTimeZone(«PST»));
   Date date = formatter.parse(«01/01/2012 05:00:00»);
   System.out.println(formatter.format(date));
   formatter.setTimeZone(TimeZone.getTimeZone(«IST»));
-  System.out.println(formatter.format(date));`
+  System.out.println(formatter.format(date));`**
   * `DateFormat formatter = new SimpleDateFormat(«dd/MM/yyyy HH:mm:ss»);
   formatter.setTimeZone(new TimeZone(«PST»));
   Date date = formatter.parse(«01/01/2012 05:00:00»);
@@ -295,33 +295,33 @@
 30. Select all true statements:  
   Note: There may be more than one right answer.  
   Answers:
-  * Threads exist within a process.
-  * Every process has at least one thread.
+  * **Threads exist within a process.**
+  * **Every process has at least one thread.**
   * Processes exist within a thread.
   * A thread may belong to more than one process.
 
 31. Which code snippet will check for the existence of the file «text.txt» in the current location?  
   Note: There may be more than one right answer.  
   Answers:
-  * File f = new File(«text.txt»);
-  System.out.println(f.exists());
-  * File f = new File(); f.setName(«text.txt»);
-  System.out.println(f.exists());
-  * File f = new File(«text.txt»);
-  System.out.println(f.equals(f));
+  * **`File f = new File(«text.txt»);
+  System.out.println(f.exists());`**
+  * `File f = new File(); f.setName(«text.txt»);
+  System.out.println(f.exists());`
+  * `File f = new File(«text.txt»);
+  System.out.println(f.equals(f));`
 
 32. Which of the following is true regarding sleep() and wait() in threaded environments?  
   Answers:
   * Both can take time in milliseconds as a parameter and will execute when the time is expired.
   * Both will wait for another thread’s notify() method before it can execute.
   * The wait() method will wait for a specific time (in milliseconds) and continue execution afterwards, while sleep() will wait for another thread’s notify() method before it will execute.
-  * The sleep() method will wait for a specific time (in milliseconds) and continue execution afterwards, while wait() will wait for another thread’s notify() method before it will execute.
+  * **The sleep() method will wait for a specific time (in milliseconds) and continue execution afterwards, while wait() will wait for another thread’s notify() method before it will execute.**
 
 33. Choose the right syntax for preparedStatement using ? as a placeholder for values, namely CUSTOMER_ID,PRICE, to be substituted while inserting values in the table ORDER:  
   `PreparedStatement ps=con.prepareStatement(«INSERT INTO ORDER (CUSTOMER_ID ,PRICE) VALUES(?,?)»);`  
   Answers:
   * ps.clearParameters(); ps.setInt(1,3); ps.setDouble(2,790.50); ps.executeUpdate(sql);
-  * ps.clearParameters(); ps.setInt(1,3); ps.setDouble(2,790.50); ps.executeUpdate();
+  * **ps.clearParameters(); ps.setInt(1,3); ps.setDouble(2,790.50); ps.executeUpdate();**
   * ps.clear(); ps.setInt(1,3); ps.setDouble(2,790.50); ps.executeUpdate(sql);
   * ps.clearParameters(); ps.setInt(1,3.09); ps.setDouble(2,790.50); ps.execute(sql);
   * ps.clearParameters(); ps.setInt(1,3.09); ps.set(2,790.50); ps.execute(sql);
@@ -336,10 +336,10 @@
   Answers:
   * `ArrayList<Integer> input = null;
   ArrayList<Integer> output = null;`
-  * `ArrayList<Integer> input = null;
-  List<Integer> output = null;`
-  * `List<Integer> input = null;
-  List<Integer> output = null;`
+  * **`ArrayList<Integer> input = null;
+  List<Integer> output = null;`**
+  * **`List<Integer> input = null;
+  List<Integer> output = null;`**
 
 35. Which is the right syntax of a javadoc comment for parameter of the method test(int)?
   `public class Test125 {
@@ -351,7 +351,7 @@
   }
   }`  
   Answers:
-  * @param a Description
+  * **@param a Description**
   * @parameter int a Description
   * @param Description
   * @parameter a Description
@@ -378,7 +378,7 @@
   }`  
   Answers:
   * The code will fail to compile.
-  * 11 12
+  * **11 12**
   * 11 11
   * 12 12
 
@@ -402,7 +402,7 @@
   }
   }`  
   Answers:
-  * super.printSgnt();
+  * **super.printSgnt();**
   * this.printSgnt();
   * printSgnt();
   * printBase();
@@ -411,13 +411,13 @@
   Note: There may be more than one right answer.  
   Answers:
   * public void main(String str[])
-  * static public void main(String str[])
+  * **static public void main(String str[])**
   * public static int main(String str[])
-  * public static void main(String str[])
+  * **public static void main(String str[])**
 
 39. What is the central abstraction of the Java Servlet API?  
   Answers:
-  * The Servlet interface
+  * **The Servlet interface**
   * The GenericServlet
   * The HttpServlet
   * The Servlet package
@@ -438,7 +438,7 @@
   }`
   Answers:
   * [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-  * [0, 1, 2, 3, 4, 5, 6, 108, 7, 8, 9]
+  * **[0, 1, 2, 3, 4, 5, 6, 108, 7, 8, 9]**
   * [0, 1, 2, 3, 4, 5, 6, 108, 8, 9, 10]
   * The code won’t compile.
 
@@ -449,7 +449,7 @@
   * Messages order is guaranteed.
   * Messages are not guaranteed to arrive at destination.
   * UDP is MTU independent.
-  * None of these.
+  * **None of these.**
 
 42. Which statements, when inserted at the indicated position in the following code, will cause a runtime exception when attempting to run the program?  
   `class A {
@@ -471,25 +471,25 @@
   * x = y;
   * z = x;
   * y = (B)x;
-  * y = (A)y;
+  * **y = (A)y;**
 
 43. Which of the following will programmatically throw an exception?  
   Answers:
-  * throw new Exception();
+  * **throw new Exception();**
   * throws new Exception();
   * throw Exception();
   * It is not possible to throw an exception programmatically.
 
 44. Which of the following statements are true regarding declaring a servlet instance in a deployment descriptor?  
   Answers:
-  * The tags are nested within &lt;web-app&gt; tags
+  * **The tags are nested within &lt;web-app&gt; tags**
   * The tags do not define parameters
   * The tags are &lt;servlet-instance&gt;&lt;/servlet-instance&gt;
-  * It specifies the fully qualified class name of the servlet
+  * **It specifies the fully qualified class name of the servlet**
 
 45. Which of the following options is a valid declaration?  
   Answers:
-  * `<%! String name="Patricia" %>`
+  * **`<%! String name="Patricia" %>`**
   * `<%! String name="Patricia"; %>`
   * `<% String name="Devyn" %>`
   * `<% public String name="Devyn"; %>`
@@ -498,7 +498,7 @@
   Answers:
   * int
   * float
-  * double
+  * **double**
   * Integer
   * Double
 
@@ -531,14 +531,14 @@
   }
   }`  
   Answers:
-  * The code will not compile.
+  * **The code will not compile.**
   * The code will compile but will give a Runtime error.
   * The code will compile and will print ‘Thread is running’.
   * The code will compile and will print nothing on the screen.
 
 49. What will happen to the running session beans if the EJB container crashes or restarts?  
   Answers:
-  * They will get destroyed (They will be destroyed)
+  * **They will get destroyed (They will be destroyed)**
   * They will keep on running
   * Their execution will be halted temporarily
   * None of the above
@@ -546,7 +546,7 @@
 50. With regard to the servlet context listener, which of the following methods is valid?
   Answers:
   * contextListenerEvent
-  * contextListenerInitialized
+  * **contextListenerInitialized**
   * contextInitialized
   * contextListenerDestroyed
 
@@ -569,7 +569,7 @@
   }
   
   Answers:
-  * The code will compile but will not output anything at runtime
+  * **The code will compile but will not output anything at runtime**
   * The code will compile and output 0
   * The code will compile and output 0 followed by 1
   * The code will not compile as a target label cannot appear before the corresponding continue or break statement
@@ -578,26 +578,26 @@
   Answers:
   * Random r = new Random(); for (int i = 0; i &lt; 5; i++) { System.out.println(r.nextInt(0,200)); }
   * Random r = new Random(200); for (int i = 0; i &lt; 5; i++) { System.out.println(r.nextInt()); }
-  * Random r = new Random(); for (int i = 0; i &lt; 5; i++) { System.out.println(r.nextInt(200)); }
+  * **Random r = new Random(); for (int i = 0; i &lt; 5; i++) { System.out.println(r.nextInt(200)); }**
   * Random r = new Random(200); for (int i = 0; i &lt; 5; i++) { System.out.println(r.nextInt(0)); }
 
 54. Which of the following statements is true of the HashMap class?  
   Answers:
-  * It stores information as key/value pairs.
+  * **It stores information as key/value pairs.**
   * Elements are returned in the order they were added.
   * It does not permit null keys.
   * It does not permit null values.
 
 55. Which statement is true regarding ServletContext Initialization Parameters in the deployment descriptor?  
   Answers:
-  * They are accessible by all servlets in a given web application.
+  * **They are accessible by all servlets in a given web application.**
   * They are accessible by all servlets in a given session.
   * They are accessible by all servlets in a given HTTP request.
   * They are accessible by all servlets in a given container.
 
 56. Which distributed object technology is most appropriate for systems that consist entirely of Java objects?  
   Answers:
-  * RMI
+  * **RMI**
   * CORBA
   * DCOM
   * COM
@@ -609,7 +609,7 @@
   * TX_BEAN_MANAGED
   * TX_REQUIRED
   * TX_MANDATORY
-  * All of the above
+  * **All of the above**
 
 58. How many objects are created in the given code?  
   `Object x, y, z;
@@ -618,13 +618,13 @@
   Answers:
   * 0
   * 1
-  * 2
+  * **2** (right answer)
   * 3
 
 59. Which method in the HttpServlet class corresponds to the HTTPPUT method?  
   Answers:
   * put
-  * doPut
+  * **doPut**
   * httpPut
   * putHttp
 
@@ -632,12 +632,12 @@
   Answers:
   * SESSIONID
   * SERVLETID
-  * JSESSIONID
+  * **JSESSIONID**
   * CONTAINERID
 
 61. Which of the following are valid ways to define a thread in Java?  
   Answers:
-  * Create a subclass of java.lang.Thread class
+  * **Create a subclass of java.lang.Thread class**
   * Create a class that implements java.lang.Runnable
   * Define method run() in a class
   * Define method call() in a class
@@ -646,12 +646,12 @@
   Answers:
   * stay()
   * go()
-  * yield()
-  * sleep(long millis)
+  * **yield()**
+  * **sleep(long millis)**
 
 63. Which option could be used to see additional warnings about code that mixes legacy code with code that uses generics?  
   Answers:
-  * -Xlint:unchecked
+  * **-Xlint:unchecked**
   * -Xlint:-unchecked
   * -Xswitchcheck or -Xlint:fallthrough depending on the version of Java
   * -classpath or -cp
@@ -660,7 +660,7 @@
   Answers:
   * java.rmi.Remote
   * rmi
-  * rmic
+  * **rmic**
   * rmijava
   * javac
 
@@ -668,7 +668,7 @@
   Answers:
   * DataAccess Object
   * Model-View-Controller
-  * Value Object
+  * **Value Object**
   * Business Delegate
 
 66. In which class is the notify method defined?  
@@ -676,20 +676,20 @@
   * Thread
   * Applet
   * Runnable
-  * Object
+  * **Object**
 
 67. Which of the following methods are members of the Vector class and allow you to input a new element?  
   Answers:
   * addItem
   * append
   * insert
-  * addElement
+  * **addElement**
 
 68. Why can’t a Graphics object be created using the following statement?  
 `Graphics g = new Graphics();`  
   Answers:
   * The Graphics class is a final class.
-  * The Graphics class is an abstract class.
+  * **The Graphics class is an abstract class.**
   * The constructor of the Graphic class needs a color object to be passed as a parameter, e.g Graphics g = new Graphics(new Color());.
 
 69. Which of the following is false?  
@@ -698,19 +698,19 @@
   * The cursor is moved forward using next().
   * The cursor is moved backward using previous().
   * A while loop can be used because next() & previous() methods return false beyond the resultset.
-  * A while loop can be used because next () & previous () methods return -1 beyond the resultset.
+  * **A while loop can be used because next () & previous () methods return -1 beyond the resultset.**
 
 70. Which of the following interfaces makes it possible for Java to save an object to a file and turn it into a data stream?  
   Answers:
   * java.io.Serialization
   * java.net.Serializable
   * java.net.Serialization
-  * java.io.Serializable
+  * **java.io.Serializable**
   * java.net.io.Serializable
 
 71. As part of the type erasure process, when compiling a class or interface that extends a parameterized class or implements a parameterized interface, the compiler may need to create a synthetic method, called a _________.  
   Answers:
-  * bridge method
+  * **bridge method**
   * helper method
   * stub method
   * raw method
@@ -735,5 +735,5 @@
   Answers:
   * -try
   * -try-catch
-  * -try-finally
+  * **-try-finally**
   * -try-catch-finally
