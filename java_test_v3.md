@@ -1,276 +1,270 @@
 # UPWORK JAVA TEST V3 2016
 
 1. Consider the following code:  
-
-```public class Jam {    
-   public void apple(int i, String s) {    
-   }    
-   //ABC    
-}```  
-Choose possible valid code replacements of «//ABC» among the choices:  
-
-Answers:
-* __public void apple(String s, int i) {}__
-* public int apple(int i, String s) {}
-* public void apple(int i, String mystring) {}
-* public void Apple(int i, String s) {}  
+  `public class Jam {
+     public void apple(int i, String s) {   
+     }    
+     //ABC    
+  }`  
+  Choose possible valid code replacements of «//ABC» among the choices:  
+  Answers:
+  * __public void apple(String s, int i) {}__
+  * public int apple(int i, String s) {}
+  * public void apple(int i, String mystring) {}
+  * public void Apple(int i, String s) {}  
 
 2. Which of these is not an event listener adapter defined in the java.awt.event package?  
-
-Answers:
-* __ActionAdapter__
-* MouseListener
-* WindowAdapter
-* FocusListener  
+  Answers:
+  * __ActionAdapter__
+  * MouseListener
+  * WindowAdapter
+  * FocusListener  
 
 3. Which distributed object technology is most appropriate for systems that consist of objects written in different languages and that execute on different operating system platforms?  
+  Answers:
+  * RMI
+  * __CORBA__
+  * COBRA
+  * DCOM
+  * COM  
 
-Answers:
-* RMI
-* __CORBA__
-* COBRA
-* DCOM
-* COM  
+4. The transaction attribute of a bean is set to ‘TX_REQUIRES_NEW’. What can be inferred about its behavior?  
+  Answers:
+  * It initiates a new transaction only when the previous one is concluded.
+  * It initiates a new transaction without waiting for the previous one to conclude.
+  * It sends the request to the EJB container for initiating a new bean.
+  * __The bean manages its own transaction.__
 
-4. The transaction attribute of a bean is set to ‘TX_REQUIRES_NEW’. What can be inferred about its behavior?
+5. Which of the following is a well-known HTTP port?  
+  Answers:
+  * 21
+  * 25
+  * 8080
+  * __80__
+  * 137
 
-Answers:
-* It initiates a new transaction only when the previous one is concluded.
-* It initiates a new transaction without waiting for the previous one to conclude.
-* It sends the request to the EJB container for initiating a new bean.
-* __The bean manages its own transaction.__
+6. Which of the following methods can be used for reporting a warning on a Connection object, Statement object & ResultSet object?  
+  Answers:
+  * __getWarnings()__
+  * getWarned()
+  * getWarning()
+  * getError()
+  * getErrors()
 
-5. Which of the following is a well-known HTTP port?
-Answers:
-* 21
-* 25
-* 8080
-* __80__
-* 137
+7. The principal finder method that must be implemented by every entity bean class is:  
+  Answers:
+  * __findByPrimaryKey()__
+  * ejbGetByPrimaryKey()
+  * ejbFindPrimayKey()
+  * getPrimaryKey()
+  * getFinder()
 
-6. Which of the following methods can be used for reporting a warning on a Connection object, Statement object & ResultSet object?
-Answers:
-* __getWarnings()__
-* getWarned()
-* getWarning()
-* getError()
-* getErrors()
+8. How does the set collection deal with duplicate elements?  
+  Answers:
+  * Duplicate values will cause an error at compile time.
+  * A set may contain elements that return duplicate values from a call to the equals method.
+  * An exception is thrown if you attempt to add an element with a duplicate value.
+  * __The add method returns false if you attempt to add an element with a duplicate value.__
 
-7. The principal finder method that must be implemented by every entity bean class is:
-Answers:
-* __findByPrimaryKey()__
-* ejbGetByPrimaryKey()
-* ejbFindPrimayKey()
-* getPrimaryKey()
-* getFinder()
+9. Why can’t a string’s compareTo method be overridden?  
+  Answers:
+  * __The String class is final, therefore its methods can’t be overridden.__
+  * The String class doesn’t have a compareTo method.
+  * A compareTo method isn’t built-in; it has to be manually implemented.
 
-8. How does the set collection deal with duplicate elements?
-Answers:
-* Duplicate values will cause an error at compile time.
-* A set may contain elements that return duplicate values from a call to the equals method.
-* An exception is thrown if you attempt to add an element with a duplicate value.
-* __The add method returns false if you attempt to add an element with a duplicate value.__
-
-9. Why can’t a string’s compareTo method be overridden?
-Answers:
-* __The String class is final, therefore its methods can’t be overridden.__
-* The String class doesn’t have a compareTo method.
-* A compareTo method isn’t built-in; it has to be manually implemented.
-
-10. Which class contains a method to create a directory?
-Answers:
-* __File__
-* DataOutput
-* Directory
-* FileDescriptor
-* FileOutputStream
+10. Which class contains a method to create a directory?  
+  Answers:
+  * __File__
+  * DataOutput
+  * Directory
+  * FileDescriptor
+  * FileOutputStream
 
 11. Which of these interfaces is the most applicable when creating a class that associates a set of keys with a set of values?
-Answers:
-* Collection
-* Set
-* __Map__
-* SortedSet
-
+  Answers:
+  * Collection
+  * Set
+  * __Map__
+  * SortedSet
 
 12. Assuming the servlet method for handling HTTPGET requests is doGet(HttpServletRequest req, HTTPServletResponse res), how can the request parameter in that servlet be retrieved?
-Answers:
-* String value=req.getInitParameter(10);
-* String value=req.getInitParameter(«product»);
-* String value=res.getParameter(«product»);
-* __String value=req.getParameter(«product»);__
+  Answers:
+  * String value=req.getInitParameter(10);
+  * String value=req.getInitParameter(«product»);
+  * String value=res.getParameter(«product»);
+  * __String value=req.getParameter(«product»);
 
-13. Which of the following is the correct syntax for suggesting that the JVM perform garbage collection?
-Answers:
-* System.setGarbageCollection();
-* System.out.gc();
-* __System.gc();__
-* System.free();
+13. Which of the following is the correct syntax for suggesting that the JVM perform garbage collection?  
+  Answers:
+  * System.setGarbageCollection();
+  * System.out.gc();
+  * __System.gc();__
+  * System.free();
 
-14. Which of the following methods should be invoked by the container to get a bean back to its working state?
-Answers:
-* EJBPassivate()
-* __EJBActivate()__
-* EJBRemove()
-* EJBOpen()
-* EJBActivation()
+14. Which of the following methods should be invoked by the container to get a bean back to its working state?  
+  Answers:
+  * EJBPassivate()
+  * __EJBActivate()__
+  * EJBRemove()
+  * EJBOpen()
+  * EJBActivation()
 
-15. What is the output of the given program?
-```public class Test89 {
-  public static void main(String[] args) {
-    T x = new T(«X», null); x.start();
-    T y = new T(«Y», x); y.start();
-    T z = new T(«Z», y); z.start();
-  }
-}
-class T extends Thread {
-  private Thread predecessor;
-  private String name;
-  public T(String name, Thread predecessor) {
-    this.predecessor = predecessor;
-    this.name = name;
-  }
-  public void run() {
-    try {
-      Thread.sleep((int)(Math.random()*89));
-      System.out.print(name);
-    } catch (InterruptedException ie) {
-      ie.printStackTrace();
-    }
-  }
-}```
-Answers:
-* always XYZ
-* always ZYX
-* any of the following: XYZ, XZY, YXZ, YZX, ZXY, ZYX
-* any of the following: XYZ, ZYX
+15. What is the output of the given program?  
+  `public class Test89 {`  
+  `  public static void main(String[] args) {`  
+  `    T x = new T(«X», null); x.start();`  
+  `    T y = new T(«Y», x); y.start();`  
+  `    T z = new T(«Z», y); z.start();`  
+  `  }`  
+  `}`  
+  `class T extends Thread {`  
+  `  private Thread predecessor;`  
+  `  private String name;`  
+  `  public T(String name, Thread predecessor) {`  
+  `    this.predecessor = predecessor;`  
+  `    this.name = name;`  
+  `  }`  
+  `  public void run() {`  
+  `    try {`  
+  `      Thread.sleep((int)(Math.random()*89));`  
+  `      System.out.print(name);`  
+  `    } catch (InterruptedException ie) {`  
+  `      ie.printStackTrace();`  
+      `}`  
+    `}`  
+  `}`  
+  Answers:
+  * always XYZ
+  * always ZYX
+  * any of the following: XYZ, XZY, YXZ, YZX, ZXY, ZYX
+  * any of the following: XYZ, ZYX
 
 16. Which of the following require explicit try/catch exception handling by the programmer?
-Answers:
-* Accessing a method in another class
-* Attempting to open a network socket
-* Attempting to open a file
-* Traversing each member of an array
+  Answers:
+  * Accessing a method in another class
+  * Attempting to open a network socket
+  * Attempting to open a file
+  * Traversing each member of an array
 
 17. What protocol is used by the DatagramSocket class?
-Answers:
-* STCP
-* UDP
-* TCP
-* FTP
-* None of the above
+  Answers:
+  * STCP
+  * UDP
+  * TCP
+  * FTP
+  * None of the above
 
 18. What should be the replacement of «//ABC» in the following code?
-class Krit {
-  String str= new String(«OOPS !!! JAVA»);
-  public void KritMethod(final int iArgs) {
-    int iOne;
-    class Bicycle {
-      public void sayHello() {
-        //ABC
-      }
-    }
-  }
-  public void Method2() {
-    int iTwo;
-  }
-}
-Answers:
-* System.out.print(str);
-* System.out.print(iOne);
-* System.out.print(iTwo);
-* System.out.print(iArgs);
+  `class Krit {`  
+  `  String str= new String(«OOPS !!! JAVA»);`  
+  `  public void KritMethod(final int iArgs) {`  
+  `    int iOne;`  
+  `    class Bicycle {`  
+  `      public void sayHello() {`  
+  `        //ABC`  
+  `      }`  
+  `    }`  
+  `  }`  
+  `  public void Method2() {`  
+  `    int iTwo;`  
+  `  }`  
+  `}`  
+  Answers:
+  * System.out.print(str);
+  * System.out.print(iOne);
+  * System.out.print(iTwo);
+  * System.out.print(iArgs);
 
 19. What is the output of the given program?
-public class Test117 {
-  {
-  System.out.print(«_INIT»);
-  }
-  static {
-  System.out.print(«_STATIC»);
-  }
-  Test117() {
-  System.out.print(«_CONST»);
-  }
-  public static void main(String[] args) {
-    System.out.print(«_MAIN»);
-    new Test117();
-  }
-}
-Answers:
-* _STATIC_MAIN_INIT_CONST
-* _STATIC_MAIN_CONST_INIT
-* _INIT_STATIC_CONST_MAIN
-* _STATIC_INIT_CONST_MAIN
+  `public class Test117 {`  
+  `  {`  
+  `  System.out.print(«_INIT»);`  
+  `  }`  
+  `  static {`  
+  `  System.out.print(«_STATIC»);`  
+  `  }`  
+  `  Test117() {`  
+  `  System.out.print(«_CONST»);`  
+  `  }`  
+  `  public static void main(String[] args) {`  
+  `    System.out.print(«_MAIN»);`  
+  `    new Test117();`  
+  `  }`  
+  `}`  
+  Answers:
+  * _STATIC_MAIN_INIT_CONST
+  * _STATIC_MAIN_CONST_INIT
+  * _INIT_STATIC_CONST_MAIN
+  * _STATIC_INIT_CONST_MAIN
 
-20. Assuming the tag library is in place and the tag handler is correct, which of the following is the correct way to use a custom tag in a JSP page?
-Answers:
-* <yourLibrary="whatColorlslt" color="red"/>
-* <yourLibrary:whatColorlslt color="red"/>
-* <yourLibrary color="red"/>
-* <yourLibrary.whatColorlslt color="red"/>
-
-21. Why would the following code snippet not compile successfully? 
-```if (mangoList instanceof List) { System.out.println("true"); }```
-Answers:
-* It is unknown whether mangoList is a List type.
-* Generic types are erased before runtime.
-* The instanceof keyword only works on primitive types.
+20. Assuming the tag library is in place and the tag handler is correct, which of the following is the correct way to use a custom tag in a JSP page?  
+  Answers:
+  * <yourLibrary="whatColorlslt" color="red"/>
+  * <yourLibrary:whatColorlslt color="red"/>
+  * <yourLibrary color="red"/>
+  * <yourLibrary.whatColorlslt color="red"/>
+  
+21. Why would the following code snippet not compile successfully?  
+  `if (mangoList instanceof List) { System.out.println("true"); }`
+  Answers:
+  * It is unknown whether mangoList is a List type.
+  * Generic types are erased before runtime.
+  * The instanceof keyword only works on primitive types.
 
 22. Choose all valid forms of the argument list for the FileOutputStream constructor shown below:
-Answers:
-* FileOutputStream( FileDescriptor fd )
-* FileOutputStream( String n, boolean a )
-* FileOutputStream( boolean a )
-* FileOutputStream()
-* FileOutputStream( File f )
+  Answers:
+  * FileOutputStream( FileDescriptor fd )
+  * FileOutputStream( String n, boolean a )
+  * FileOutputStream( boolean a )
+  * FileOutputStream()
+  * FileOutputStream( File f )
 
-23. Which of the following are wrapper classes?
-Note: There may be more than one right answer.
-Answers:
-* java.lang.Math
-* java.lang.Boolean
-* java.lang.Long
-* java.lang.Float
+23. Which of the following are wrapper classes?  
+  Note: There may be more than one right answer.  
+  Answers:
+  * java.lang.Math
+  * java.lang.Boolean
+  * java.lang.Long
+  * java.lang.Float
 
-24. Which of the following illustrates correct synchronization syntax?
-Answers:
-* public synchronized void Process(void){}
-* public void Process(){ synchronized(this){ } }
-* public void synchronized Process(){}
-* public synchronized void Process(){}
+24. Which of the following illustrates correct synchronization syntax?  
+  Answers:
+  * public synchronized void Process(void){}
+  * public void Process(){ synchronized(this){ } }
+  * public void synchronized Process(){}
+  * public synchronized void Process(){}
 
 25. With regard to the destroy lifecycle method, identify the correct statements about its purpose or about how and when it is invoked.
-Note: There may be more than one right answer.
-Answers:
-* It gives the servlet an opportunity to clean up resources.
-* Like try-catch, it is called upon an exception.
-* It is rarely used but can be called to remove a servlet from memory.
-* It isn’t called if the server crashes.
+  Note: There may be more than one right answer.
+  Answers:
+  * It gives the servlet an opportunity to clean up resources.
+  * Like try-catch, it is called upon an exception.
+  * It is rarely used but can be called to remove a servlet from memory.
+  * It isn’t called if the server crashes.
 
 26. Which of these interfaces are used by implementations of models for JTable?
-Answers:
-* TableModel
-* TableColumnModel
-* TableSelectionModel
-* ListModel
+  Answers:
+  * TableModel
+  * TableColumnModel
+  * TableSelectionModel
+  * ListModel
 
 27. Which of the following is the correct syntax for creating a Session object?
-Answers:
-* HttpSession ses=request.getSession(true);
-* HttpSession ses=getSession(true);
-* HttpSession ses=request.getSession();
-* HttpSession ses=request.getSessionObject(true);
-* HttpSession ses=response.getSession(true);
+  Answers:
+  * HttpSession ses=request.getSession(true);
+  * HttpSession ses=getSession(true);
+  * HttpSession ses=request.getSession();
+  * HttpSession ses=request.getSessionObject(true);
+  * HttpSession ses=response.getSession(true);
 
 28. Which of the following symbols are metacharacters supported by the java.util.regex API?
-Answers:
-* .
-* \
-* @
-* #
+  Answers:
+  * .
+  * \
+  * @
+  * #
 
-29. Which of the following code snippets will correctly convert from one time zone to another time zone?
+29. Which of the following code snippets will correctly convert from one time zone to another time zone?  
 Note: There may be more than one right answer.
 Answers:
 * DateFormat formatter = new SimpleDateFormat(«dd/MM/yyyy HH:mm:ss»);
