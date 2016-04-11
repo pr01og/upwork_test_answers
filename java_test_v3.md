@@ -1,8 +1,7 @@
 # UPWORK JAVA TEST V3 2016
 
 1. Consider the following code:  
-```
-public class Jam {  
+```public class Jam {  
    public void apple(int i, String s) {  
    }  
    //ABC  
@@ -36,7 +35,7 @@ Answers:
 * It initiates a new transaction only when the previous one is concluded.
 * It initiates a new transaction without waiting for the previous one to conclude.
 * It sends the request to the EJB container for initiating a new bean.
-* _The bean manages its own transaction._
+* __The bean manages its own transaction.__
 
 5. Which of the following is a well-known HTTP port?
 Answers:
