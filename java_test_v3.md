@@ -7,28 +7,27 @@
    //ABC  
 }  
 ```
-Choose possible valid code replacements of «//ABC» among the choices:
-
+Choose possible valid code replacements of «//ABC» among the choices:  
 Answers:
 * ___public void apple(String s, int i) {}___
 * public int apple(int i, String s) {}
 * public void apple(int i, String mystring) {}
-* public void Apple(int i, String s) {}
+* public void Apple(int i, String s) {}  
 
-2. Which of these is not an event listener adapter defined in the java.awt.event package?
+2. Which of these is not an event listener adapter defined in the java.awt.event package?  
 Answers:
 * ___ActionAdapter___
 * MouseListener
 * WindowAdapter
-* FocusListener
+* FocusListener  
 
-3. Which distributed object technology is most appropriate for systems that consist of objects written in different languages and that execute on different operating system platforms?
+3. Which distributed object technology is most appropriate for systems that consist of objects written in different languages and that execute on different operating system platforms?  
 Answers:
 * RMI
 * ___CORBA___
 * COBRA
 * DCOM
-* COM
+* COM  
 
 4. The transaction attribute of a bean is set to ‘TX_REQUIRES_NEW’. What can be inferred about its behavior?
 Answers:
