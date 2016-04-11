@@ -265,470 +265,475 @@
   * #
 
 29. Which of the following code snippets will correctly convert from one time zone to another time zone?  
-Note: There may be more than one right answer.
-Answers:
-* DateFormat formatter = new SimpleDateFormat(«dd/MM/yyyy HH:mm:ss»);
-formatter.setTimeZone(TimeZone.getTimeZone(«GMT-8»));
-Date date = formatter.parse(«01/01/2012 05:00:00»);
-System.out.println(formatter.format(date));
-formatter.setTimeZone(TimeZone.getTimeZone(«GMT+5»));
-System.out.println(formatter.format(date));
-* DateFormat formatter = new SimpleDateFormat(«dd/MM/yyyy HH:mm:ss»);
-formatter.setTimeZone(TimeZone.getTimeZone(«PST»));
-Date date = formatter.parse(«01/01/2012 05:00:00»);
-System.out.println(formatter.format(date));
-formatter.setTimeZone(TimeZone.getTimeZone(«IST»));
-System.out.println(formatter.format(date));
-* DateFormat formatter = new SimpleDateFormat(«dd/MM/yyyy HH:mm:ss»);
-formatter.setTimeZone(new TimeZone(«PST»));
-Date date = formatter.parse(«01/01/2012 05:00:00»);
-System.out.println(formatter.format(date));
-formatter.setTimeZone(new TimeZone(«IST»));
-System.out.println(formatter.format(date));
-* DateFormat formatter = new SimpleDateFormat(«dd/MM/yyyy HH:mm:ss»);
-formatter.setTimeZone(new TimeZone(«GMT-8»));
-Date date = formatter.parse(«01/01/2012 05:00:00»);
-System.out.println(formatter.format(date));
-formatter.setTimeZone(new TimeZone(«GMT+5»));
-System.out.println(formatter.format(date));
+  Note: There may be more than one right answer.  
+  Answers:
+  * `DateFormat formatter = new SimpleDateFormat(«dd/MM/yyyy HH:mm:ss»);
+  formatter.setTimeZone(TimeZone.getTimeZone(«GMT-8»));
+  Date date = formatter.parse(«01/01/2012 05:00:00»);
+  System.out.println(formatter.format(date));
+  formatter.setTimeZone(TimeZone.getTimeZone(«GMT+5»));
+  System.out.println(formatter.format(date));`
+  * `DateFormat formatter = new SimpleDateFormat(«dd/MM/yyyy HH:mm:ss»);
+  formatter.setTimeZone(TimeZone.getTimeZone(«PST»));
+  Date date = formatter.parse(«01/01/2012 05:00:00»);
+  System.out.println(formatter.format(date));
+  formatter.setTimeZone(TimeZone.getTimeZone(«IST»));
+  System.out.println(formatter.format(date));`
+  * `DateFormat formatter = new SimpleDateFormat(«dd/MM/yyyy HH:mm:ss»);
+  formatter.setTimeZone(new TimeZone(«PST»));
+  Date date = formatter.parse(«01/01/2012 05:00:00»);
+  System.out.println(formatter.format(date));
+  formatter.setTimeZone(new TimeZone(«IST»));
+  System.out.println(formatter.format(date));`
+  * `DateFormat formatter = new SimpleDateFormat(«dd/MM/yyyy HH:mm:ss»);
+  formatter.setTimeZone(new TimeZone(«GMT-8»));
+  Date date = formatter.parse(«01/01/2012 05:00:00»);
+  System.out.println(formatter.format(date));
+  formatter.setTimeZone(new TimeZone(«GMT+5»));
+  System.out.println(formatter.format(date));`
 
-30. Select all true statements:
-Note: There may be more than one right answer.
-Answers:
-* Threads exist within a process.
-* Every process has at least one thread.
-* Processes exist within a thread.
-* A thread may belong to more than one process.
+30. Select all true statements:  
+  Note: There may be more than one right answer.  
+  Answers:
+  * Threads exist within a process.
+  * Every process has at least one thread.
+  * Processes exist within a thread.
+  * A thread may belong to more than one process.
 
-31. Which code snippet will check for the existence of the file «text.txt» in the current location?
-Note: There may be more than one right answer.
-Answers:
-* File f = new File(«text.txt»);
-System.out.println(f.exists());
-* File f = new File(); f.setName(«text.txt»);
-System.out.println(f.exists());
-* File f = new File(«text.txt»);
-System.out.println(f.equals(f));
+31. Which code snippet will check for the existence of the file «text.txt» in the current location?  
+  Note: There may be more than one right answer.  
+  Answers:
+  * File f = new File(«text.txt»);
+  System.out.println(f.exists());
+  * File f = new File(); f.setName(«text.txt»);
+  System.out.println(f.exists());
+  * File f = new File(«text.txt»);
+  System.out.println(f.equals(f));
 
-32. Which of the following is true regarding sleep() and wait() in threaded environments?
-Answers:
-* Both can take time in milliseconds as a parameter and will execute when the time is expired.
-* Both will wait for another thread’s notify() method before it can execute.
-* The wait() method will wait for a specific time (in milliseconds) and continue execution afterwards, while sleep() will wait for another thread’s notify() method before it will execute.
-* The sleep() method will wait for a specific time (in milliseconds) and continue execution afterwards, while wait() will wait for another thread’s notify() method before it will execute.
+32. Which of the following is true regarding sleep() and wait() in threaded environments?  
+  Answers:
+  * Both can take time in milliseconds as a parameter and will execute when the time is expired.
+  * Both will wait for another thread’s notify() method before it can execute.
+  * The wait() method will wait for a specific time (in milliseconds) and continue execution afterwards, while sleep() will wait for another thread’s notify() method before it will execute.
+  * The sleep() method will wait for a specific time (in milliseconds) and continue execution afterwards, while wait() will wait for another thread’s notify() method before it will execute.
 
-33. Choose the right syntax for preparedStatement using ? as a placeholder for values, namely CUSTOMER_ID,PRICE, to be substituted while inserting values in the table ORDER:
-PreparedStatement ps=con.prepareStatement(«INSERT INTO ORDER (CUSTOMER_ID ,PRICE) VALUES(?,?)»);
-Answers:
-* ps.clearParameters(); ps.setInt(1,3); ps.setDouble(2,790.50); ps.executeUpdate(sql);
-* ps.clearParameters(); ps.setInt(1,3); ps.setDouble(2,790.50); ps.executeUpdate();
-* ps.clear(); ps.setInt(1,3); ps.setDouble(2,790.50); ps.executeUpdate(sql);
-* ps.clearParameters(); ps.setInt(1,3.09); ps.setDouble(2,790.50); ps.execute(sql);
-* ps.clearParameters(); ps.setInt(1,3.09); ps.set(2,790.50); ps.execute(sql);
+33. Choose the right syntax for preparedStatement using ? as a placeholder for values, namely CUSTOMER_ID,PRICE, to be substituted while inserting values in the table ORDER:  
+  `PreparedStatement ps=con.prepareStatement(«INSERT INTO ORDER (CUSTOMER_ID ,PRICE) VALUES(?,?)»);`  
+  Answers:
+  * ps.clearParameters(); ps.setInt(1,3); ps.setDouble(2,790.50); ps.executeUpdate(sql);
+  * ps.clearParameters(); ps.setInt(1,3); ps.setDouble(2,790.50); ps.executeUpdate();
+  * ps.clear(); ps.setInt(1,3); ps.setDouble(2,790.50); ps.executeUpdate(sql);
+  * ps.clearParameters(); ps.setInt(1,3.09); ps.setDouble(2,790.50); ps.execute(sql);
+  * ps.clearParameters(); ps.setInt(1,3.09); ps.set(2,790.50); ps.execute(sql);
 
-34. Given a method declared as:
-public static <E extends Number> List<E> process(List<E> nums)
-A programmer wants to use the method like this:
-// INSERT DECLARATIONS HERE
-output = process(input);
-Which pair of declarations could be placed at // INSERT DECLARATIONS HERE to allow the code to compile? (Choose all that apply.)
-Note: There may be more than one right answer.
-Answers:
-* ArrayList<Integer> input = null;
-ArrayList<Integer> output = null;
-* ArrayList<Integer> input = null;
-List<Integer> output = null;
-* List<Integer> input = null;
-List<Integer> output = null;
+34. Given a method declared as:  
+  `public static <E extends Number> List<E> process(List<E> nums)`  
+  A programmer wants to use the method like this:  
+  *// INSERT DECLARATIONS HERE*  
+  `output = process(input);`  
+  Which pair of declarations could be placed at *// INSERT DECLARATIONS HERE* to allow the code to compile? (Choose all that apply.)  
+  Note: There may be more than one right answer.  
+  Answers:
+  * `ArrayList<Integer> input = null;
+  ArrayList<Integer> output = null;`
+  * `ArrayList<Integer> input = null;
+  List<Integer> output = null;`
+  * `List<Integer> input = null;
+  List<Integer> output = null;`
 
 35. Which is the right syntax of a javadoc comment for parameter of the method test(int)?
-public class Test125 {
-public static void main(String[] args) {
-new Test125().test(125);
-}
-public void test(int a) {
-for (int i=0; i<a; System.out.println(i++));
-}
-}
-Answers:
-@param a Description
-@parameter int a Description
-@param Description
-@parameter a Description
-36. What will be the output when this code is compiled and run?
-public class Test {
-static int x = 10;
-public Test() {
-Bar b = new Bar();
-Bar b1 = new Bar();
-update(b);
-update(b1);
-}
-private void update(Bar bar) {
-bar.x = ++x;
-System.out.println(bar.x);
-}
-public static void main(String args[]) {
-new Test();
-}
-private class Bar {
-public int x = 10;
-}
-}
-Answers:
-* The code will fail to compile.
-* 11 12
-* 11 11
-* 12 12
+  `public class Test125 {
+  public static void main(String[] args) {
+  new Test125().test(125);
+  }
+  public void test(int a) {
+  for (int i=0; i<a; System.out.println(i++));
+  }
+  }`  
+  Answers:
+  * @param a Description
+  * @parameter int a Description
+  * @param Description
+  * @parameter a Description
 
-37. Which line of code will produce output «base», if inserted instead of the comment in the given code?
-public class Test9 {
-public static void main(String[] args) {
-new Child9().printBase();
-}
-}
-class Parent9 {
-public void printSgnt() {
-System.out.println(«base»);
-}
-}
-class Child9 extends Parent9 {
-public void printSgnt() {
-System.out.println(«—-«);
-}
-public void printBase() {
-// !!! INSERT A CODE LINE HERE !!!
-}
-}
-Answers:
-* super.printSgnt();
-* this.printSgnt();
-* printSgnt();
-* printBase();
+36. What will be the output when this code is compiled and run?  
+  `public class Test {
+  static int x = 10;
+  public Test() {
+  Bar b = new Bar();
+  Bar b1 = new Bar();
+  update(b);
+  update(b1);
+  }
+  private void update(Bar bar) {
+  bar.x = ++x;
+  System.out.println(bar.x);
+  }
+  public static void main(String args[]) {
+  new Test();
+  }
+  private class Bar {
+  public int x = 10;
+  }
+  }`  
+  Answers:
+  * The code will fail to compile.
+  * 11 12
+  * 11 11
+  * 12 12
 
-38. Choose the correct declarations for the main() method which will allow the class to be run as a standalone program:
-Note: There may be more than one right answer.
-Answers:
-* public void main(String str[])
-* static public void main(String str[])
-* public static int main(String str[])
-* public static void main(String str[])
+37. Which line of code will produce output «base», if inserted instead of the comment in the given code?  
+  `public class Test9 {
+  public static void main(String[] args) {
+  new Child9().printBase();
+  }
+  }
+  class Parent9 {
+  public void printSgnt() {
+  System.out.println(«base»);
+  }
+  }
+  class Child9 extends Parent9 {
+  public void printSgnt() {
+  System.out.println(«—-«);
+  }
+  public void printBase() {
+  // !!! INSERT A CODE LINE HERE !!!
+  }
+  }`  
+  Answers:
+  * super.printSgnt();
+  * this.printSgnt();
+  * printSgnt();
+  * printBase();
 
-39. What is the central abstraction of the Java Servlet API?
-Answers:
-* The Servlet interface
-* The GenericServlet
-* The HttpServlet
-* The Servlet package
-* The Servlet object
+38. Choose the correct declarations for the main() method which will allow the class to be run as a standalone program:  
+  Note: There may be more than one right answer.  
+  Answers:
+  * public void main(String str[])
+  * static public void main(String str[])
+  * public static int main(String str[])
+  * public static void main(String str[])
 
-40. What will be the output of the following code?
-import java.util.*;
-public class Test {
-public static void main(String args[]) throws Exception {
-List l = new ArrayList();
-int a = (int) (3 * 2.5);
-for (int i = 0; i &lt; 10; i++)
-l.add(i);
-String s = «Hello»;
-l.add(a, s.getBytes(«UTF-8»)[2]);
-System.out.println(l);
-}
-}
-Answers:
-* [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-* [0, 1, 2, 3, 4, 5, 6, 108, 7, 8, 9]
-* [0, 1, 2, 3, 4, 5, 6, 108, 8, 9, 10]
-* The code won’t compile.
+39. What is the central abstraction of the Java Servlet API?  
+  Answers:
+  * The Servlet interface
+  * The GenericServlet
+  * The HttpServlet
+  * The Servlet package
+  * The Servlet object
 
-41. What is true regarding the User Datagram Protocol (UDP)?
-Note: There may be more than one right answer.
-Answers:
-* A message is never partial.
-* Messages order is guaranteed.
-* Messages are not guaranteed to arrive at destination.
-* UDP is MTU independent.
-* None of these.
+40. What will be the output of the following code?  
+  `import java.util.*;
+  public class Test {
+  public static void main(String args[]) throws Exception {
+  List l = new ArrayList();
+  int a = (int) (3 * 2.5);
+  for (int i = 0; i &lt; 10; i++)
+  l.add(i);
+  String s = «Hello»;
+  l.add(a, s.getBytes(«UTF-8»)[2]);
+  System.out.println(l);
+  }
+  }`
+  Answers:
+  * [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+  * [0, 1, 2, 3, 4, 5, 6, 108, 7, 8, 9]
+  * [0, 1, 2, 3, 4, 5, 6, 108, 8, 9, 10]
+  * The code won’t compile.
 
-42.Which statements, when inserted at the indicated position in the following code, will cause a runtime exception when attempting to run the program?
-class A {
-}
-class B extends A {
-}
-class C extends A {
-}
-public class X {
-public static void main(String args[]) {
-A x = new A();
-B y = new B();
-C z = new C();
-// insert statement here
-}
-}
-Note: There may be more than one right answer.
-Answers:
-* x = y;
-* z = x;
-* y = (B)x;
-* y = (A)y;
+41. What is true regarding the User Datagram Protocol (UDP)?  
+  Note: There may be more than one right answer.  
+  Answers:
+  * A message is never partial.
+  * Messages order is guaranteed.
+  * Messages are not guaranteed to arrive at destination.
+  * UDP is MTU independent.
+  * None of these.
 
-43. Which of the following will programmatically throw an exception?
-Answers:
-* throw new Exception();
-* throws new Exception();
-* throw Exception();
-* It is not possible to throw an exception programmatically.
+42. Which statements, when inserted at the indicated position in the following code, will cause a runtime exception when attempting to run the program?  
+  `class A {
+  }
+  class B extends A {
+  }
+  class C extends A {
+  }
+  public class X {
+  public static void main(String args[]) {
+  A x = new A();
+  B y = new B();
+  C z = new C();
+  // insert statement here
+  }
+  }`  
+  Note: There may be more than one right answer.  
+  Answers:
+  * x = y;
+  * z = x;
+  * y = (B)x;
+  * y = (A)y;
 
-44. Which of the following statements are true regarding declaring a servlet instance in a deployment descriptor?
-Answers:
-* The tags are nested within <web-app> tags
-* The tags do not define parameters
-* The tags are <servlet-instance></servlet-instance>
-* It specifies the fully qualified class name of the servlet
+43. Which of the following will programmatically throw an exception?  
+  Answers:
+  * throw new Exception();
+  * throws new Exception();
+  * throw Exception();
+  * It is not possible to throw an exception programmatically.
 
-46. Which of the following options is a valid declaration?
-Answers:
-* <%! String name=»Patricia» %>
-* <%! String name=»Patricia»; %>
-* <% String name=»Devyn» %>
-* <% public String name=»Devyn»; %>
+44. Which of the following statements are true regarding declaring a servlet instance in a deployment descriptor?  
+  Answers:
+  * The tags are nested within &lt;web-app&gt; tags
+  * The tags do not define parameters
+  * The tags are &lt;servlet-instance&gt;&lt;/servlet-instance&gt;
+  * It specifies the fully qualified class name of the servlet
 
-47. What is the return type of the method ceil(double) from the Math class
-Answers:
-* int
-* float
-* double
-* Integer
-* Double
+45. Which of the following options is a valid declaration?  
+  Answers:
+  * `<%! String name="Patricia" %>`
+  * `<%! String name="Patricia"; %>`
+  * `<% String name="Devyn" %>`
+  * `<% public String name="Devyn"; %>`
 
-48. What would happen on trying to compile and run the following code?
-class ExThread extends Thread
-{
-public native String getTime();
-}
-public class ThMulti implements Runnable
-{
-boolean Stop;
-public static void main(String argv[])
-{
-ThMulti m = new ThMulti();
-m.go();
-}
-public void go()
-{
-ExThread ts = new ExThread(this);
-ts.start();
-Stop=true;
-}
-public void run()
-{
-if(Stop==true)
-{
-return;
-}
-System.out.println(«Thread is running»);
-}
-}
-Answers:
-* The code will not compile.
-* The code will compile but will give a Runtime error.
-* The code will compile and will print ‘Thread is running’.
-* The code will compile and will print nothing on the screen.
+47. What is the return type of the method ceil(double) from the Math class  
+  Answers:
+  * int
+  * float
+  * double
+  * Integer
+  * Double
 
-49. What will happen to the running session beans if the EJB container crashes or restarts?
-Answers:
-* They will get destroyed (They will be destroyed)
-* They will keep on running
-* Their execution will be halted temporarily
-* None of the above
+48. What would happen on trying to compile and run the following code?  
+  `class ExThread extends Thread
+  {
+  public native String getTime();
+  }
+  public class ThMulti implements Runnable
+  {
+  boolean Stop;
+  public static void main(String argv[])
+  {
+  ThMulti m = new ThMulti();
+  m.go();
+  }
+  public void go()
+  {
+  ExThread ts = new ExThread(this);
+  ts.start();
+  Stop=true;
+  }
+  public void run()
+  {
+  if(Stop==true)
+  {
+  return;
+  }
+  System.out.println(«Thread is running»);
+  }
+  }`  
+  Answers:
+  * The code will not compile.
+  * The code will compile but will give a Runtime error.
+  * The code will compile and will print ‘Thread is running’.
+  * The code will compile and will print nothing on the screen.
+
+49. What will happen to the running session beans if the EJB container crashes or restarts?  
+  Answers:
+  * They will get destroyed (They will be destroyed)
+  * They will keep on running
+  * Their execution will be halted temporarily
+  * None of the above
 
 50. With regard to the servlet context listener, which of the following methods is valid?
-Answers:
-* contextListenerEvent
-* contextListenerInitialized
-* contextInitialized
-* contextListenerDestroyed
+  Answers:
+  * contextListenerEvent
+  * contextListenerInitialized
+  * contextInitialized
+  * contextListenerDestroyed
 
-52. What would be the result of the following code?
-public class Quest
-{
-int i=0;
-public static void main(String argv[]) {
-}
-Quest()
-{
-top:
-while(i <2) {
-System.out.println(i);
-i++;
-continue top;
-}
-}
-}
-Answers:
-* The code will compile but will not output anything at runtime
-* The code will compile and output 0
-* The code will compile and output 0 followed by 1
-* The code will not compile as a target label cannot appear before the corresponding continue or break statement
+52. What would be the result of the following code?  
+  
+  >public class Quest  
+  {  
+  int i=0;  
+  public static void main(String argv[]) {  
+  }  
+  Quest()  
+  {  
+  top:  
+  while(i &lt; 2) {  
+  System.out.println(i);  
+  i++;  
+  continue top;  
+  }  
+  }  
+  }
+  
+  Answers:
+  * The code will compile but will not output anything at runtime
+  * The code will compile and output 0
+  * The code will compile and output 0 followed by 1
+  * The code will not compile as a target label cannot appear before the corresponding continue or break statement
 
-53. Which of the following code snippets will generate five random numbers between 0 and 200?
-Answers:
-* Random r = new Random(); for (int i = 0; i < 5; i++) { System.out.println(r.nextInt(0,200)); }
-* Random r = new Random(200); for (int i = 0; i < 5; i++) { System.out.println(r.nextInt()); }
-* Random r = new Random(); for (int i = 0; i < 5; i++) { System.out.println(r.nextInt(200)); }
-* Random r = new Random(200); for (int i = 0; i < 5; i++) { System.out.println(r.nextInt(0)); }
+53. Which of the following code snippets will generate five random numbers between 0 and 200?  
+  Answers:
+  * Random r = new Random(); for (int i = 0; i &lt; 5; i++) { System.out.println(r.nextInt(0,200)); }
+  * Random r = new Random(200); for (int i = 0; i &lt; 5; i++) { System.out.println(r.nextInt()); }
+  * Random r = new Random(); for (int i = 0; i &lt; 5; i++) { System.out.println(r.nextInt(200)); }
+  * Random r = new Random(200); for (int i = 0; i &lt; 5; i++) { System.out.println(r.nextInt(0)); }
 
-54. Which of the following statements is true of the HashMap class?
-Answers:
-* It stores information as key/value pairs.
-* Elements are returned in the order they were added.
-* It does not permit null keys.
-* It does not permit null values.
+54. Which of the following statements is true of the HashMap class?  
+  Answers:
+  * It stores information as key/value pairs.
+  * Elements are returned in the order they were added.
+  * It does not permit null keys.
+  * It does not permit null values.
 
-55. Which statement is true regarding ServletContext Initialization Parameters in the deployment descriptor?
-Answers:
-* They are accessible by all servlets in a given web application.
-* They are accessible by all servlets in a given session.
-* They are accessible by all servlets in a given HTTP request.
-* They are accessible by all servlets in a given container.
+55. Which statement is true regarding ServletContext Initialization Parameters in the deployment descriptor?  
+  Answers:
+  * They are accessible by all servlets in a given web application.
+  * They are accessible by all servlets in a given session.
+  * They are accessible by all servlets in a given HTTP request.
+  * They are accessible by all servlets in a given container.
 
-56. Which distributed object technology is most appropriate for systems that consist entirely of Java objects?
-Answers:
-* RMI
-* CORBA
-* DCOM
-* COM
-* JDBC
+56. Which distributed object technology is most appropriate for systems that consist entirely of Java objects?  
+  Answers:
+  * RMI
+  * CORBA
+  * DCOM
+  * COM
+  * JDBC
 
-57. Which of the following transaction modes are supported by Enterprise Java Beans?
-Answers:
-* TX_NOT_SUPPORTED
-* TX_BEAN_MANAGED
-* TX_REQUIRED
-* TX_MANDATORY
-* All of the above
-58. How many objects are created in the given code?
-Object x, y, z;
-x = new Object();
-y = new Object();
-Answers:
-* 0
-* 1
-* 2
-* 3
+57. Which of the following transaction modes are supported by Enterprise Java Beans?  
+  Answers:
+  * TX_NOT_SUPPORTED
+  * TX_BEAN_MANAGED
+  * TX_REQUIRED
+  * TX_MANDATORY
+  * All of the above
 
-59. Which method in the HttpServlet class corresponds to the HTTPPUT method?
-Answers:
-* put
-* doPut
-* httpPut
-* putHttp
+58. How many objects are created in the given code?  
+  `Object x, y, z;
+  x = new Object();
+  y = new Object();`  
+  Answers:
+  * 0
+  * 1
+  * 2
+  * 3
 
-60. Which of the following is the name of the cookie used by Servlet Containers to maintain session information?
-Answers:
-* SESSIONID
-* SERVLETID
-* JSESSIONID
-* CONTAINERID
+59. Which method in the HttpServlet class corresponds to the HTTPPUT method?  
+  Answers:
+  * put
+  * doPut
+  * httpPut
+  * putHttp
 
-61. Which of the following are valid ways to define a thread in Java?
-Answers:
-* Create a subclass of java.lang.Thread class
-* Create a class that implements java.lang.Runnable
-* Define method run() in a class
-* Define method call() in a class
+60. Which of the following is the name of the cookie used by Servlet Containers to maintain session information?  
+  Answers:
+  * SESSIONID
+  * SERVLETID
+  * JSESSIONID
+  * CONTAINERID
 
-62. Which of the following are the methods of the Thread class?
-Answers:
-* stay()
-* go()
-* yield()
-* sleep(long millis)
+61. Which of the following are valid ways to define a thread in Java?  
+  Answers:
+  * Create a subclass of java.lang.Thread class
+  * Create a class that implements java.lang.Runnable
+  * Define method run() in a class
+  * Define method call() in a class
 
-63. Which option could be used to see additional warnings about code that mixes legacy code with code that uses generics?
-Answers:
-* -Xlint:unchecked
-* -Xlint:-unchecked
-* -Xswitchcheck or -Xlint:fallthrough depending on the version of Java
-* -classpath or -cp
+62. Which of the following are the methods of the Thread class?  
+  Answers:
+  * stay()
+  * go()
+  * yield()
+  * sleep(long millis)
 
-64. The JDK comes with a special program that generates skeleton and stub objects that is known as:
-Answers:
-* java.rmi.Remote
-* rmi
-* rmic
-* rmijava
-* javac
+63. Which option could be used to see additional warnings about code that mixes legacy code with code that uses generics?  
+  Answers:
+  * -Xlint:unchecked
+  * -Xlint:-unchecked
+  * -Xswitchcheck or -Xlint:fallthrough depending on the version of Java
+  * -classpath or -cp
 
-65. Which design pattern reduces network traffic by acting as a caching proxy of a remote object?
-Answers:
-* DataAccess Object
-* Model-View-Controller
-* Value Object
-* Business Delegate
+64. The JDK comes with a special program that generates skeleton and stub objects that is known as:  
+  Answers:
+  * java.rmi.Remote
+  * rmi
+  * rmic
+  * rmijava
+  * javac
 
-66. In which class is the notify method defined?
-Answers:
-* Thread
-* Applet
-* Runnable
-* Object
+65. Which design pattern reduces network traffic by acting as a caching proxy of a remote object?  
+  Answers:
+  * DataAccess Object
+  * Model-View-Controller
+  * Value Object
+  * Business Delegate
 
-67. Which of the following methods are members of the Vector class and allow you to input a new element?
-Answers:
-* addItem
-* append
-* insert
-* addElement
+66. In which class is the notify method defined?  
+  Answers:
+  * Thread
+  * Applet
+  * Runnable
+  * Object
 
-68. Why can’t a Graphics object be created using the following statement?
-Graphics g = new Graphics();
-Answers:
-* The Graphics class is a final class.
-* The Graphics class is an abstract class.
-* The constructor of the Graphic class needs a color object to be passed as a parameter, e.g Graphics g = new Graphics(new Color());.
+67. Which of the following methods are members of the Vector class and allow you to input a new element?  
+  Answers:
+  * addItem
+  * append
+  * insert
+  * addElement
 
-69. Which of the following is false?
-Answers:
-* A scrollable ResultSet can be created in JDBC 2.0 API.
-* The cursor is moved forward using next().
-* The cursor is moved backward using previous().
-* A while loop can be used because next() & previous() methods return false beyond the resultset.
-* A while loop can be used because next () & previous () methods return -1 beyond the resultset.
+68. Why can’t a Graphics object be created using the following statement?  
+`Graphics g = new Graphics();`  
+  Answers:
+  * The Graphics class is a final class.
+  * The Graphics class is an abstract class.
+  * The constructor of the Graphic class needs a color object to be passed as a parameter, e.g Graphics g = new Graphics(new Color());.
 
-70. Which of the following interfaces makes it possible for Java to save an object to a file and turn it into a data stream?
-Answers:
-* java.io.Serialization
-* java.net.Serializable
-* java.net.Serialization
-* java.io.Serializable
-* java.net.io.Serializable
+69. Which of the following is false?  
+  Answers:
+  * A scrollable ResultSet can be created in JDBC 2.0 API.
+  * The cursor is moved forward using next().
+  * The cursor is moved backward using previous().
+  * A while loop can be used because next() & previous() methods return false beyond the resultset.
+  * A while loop can be used because next () & previous () methods return -1 beyond the resultset.
 
-71. As part of the type erasure process, when compiling a class or interface that extends a parameterized class or implements a parameterized interface, the compiler may need to create a synthetic method, called a _________.
-Answers:
-* bridge method
-* helper method
-* stub method
-* raw method
+70. Which of the following interfaces makes it possible for Java to save an object to a file and turn it into a data stream?  
+  Answers:
+  * java.io.Serialization
+  * java.net.Serializable
+  * java.net.Serialization
+  * java.io.Serializable
+  * java.net.io.Serializable
+
+71. As part of the type erasure process, when compiling a class or interface that extends a parameterized class or implements a parameterized interface, the compiler may need to create a synthetic method, called a _________.  
+  Answers:
+  * bridge method
+  * helper method
+  * stub method
+  * raw method
 
 72. What is the output of the given console application?
-public class Test31 {
-public static void main(String[] args) {
-test();
-}
-public static void test() {
-try {
-System.out.print(«-try»);
-return;
-} catch (Exception e) {
-System.out.print(«-catch»);
-} finally {
-System.out.print(«-finally»);
-}
-}
-}
-Answers:
-* -try
-* -try-catch
-* -try-finally
-* -try-catch-finally
+>public class Test31 {  
+>public static void main(String[] args) {  
+>test();  
+>}  
+>public static void test() {  
+>try {  
+>System.out.print(«-try»);  
+>return;  
+>} catch (Exception e) {  
+>System.out.print(«-catch»);  
+>} finally {  
+>System.out.print(«-finally»);  
+>}  
+>}  
+>}  
+  
+  Answers:
+  * -try
+  * -try-catch
+  * -try-finally
+  * -try-catch-finally
