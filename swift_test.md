@@ -5,11 +5,11 @@
   * ExampleSwift.h
   * Example.Swift.h
   * Example+Swift.h
-  * Example-Swift.h
+  * **Example-Swift.h**
 
 2. What does a retainCount represent in ARC?  
   Answers:
-  * The current number of strong references to an object. 
+  * **The current number of strong references to an object. **
   * The current number of instances of an object.
   * The total number of objects currently being retained in memory.
   * The total number of times an object has been allocated.
@@ -18,7 +18,7 @@
   Answers:
   * extension MyClass(MyProtocol) { }
   * extension MyClass, prot MyProtocol { }
-  * extension MyClass: MyProtocol { }
+  * **extension MyClass: MyProtocol { }**
   * extension MyClass, MyProtocol { }
 
 4. Which one is the correct keyword for defining a constant in Swift? ( or To declare a constant in Swift you would use: )  
@@ -26,12 +26,12 @@
   * const
   * contant
   * final
-  * let 
+  * **let** 
   * def
 
 6. Which one of the below functions definitions is wrong considering Swift language?  
   Answers:
-  * func haveChar(#string: String, character: Character) -&gt; (Bool)
+  * **func haveChar(#string: String, character: Character) -&gt; (Bool)**
   * func mean(numbers: Double...) -&gt; Double
   * func minMax(array: [Int]) -&gt; (min: Int, max: Int)?
   * func minMax(array: [Int]) -&gt; (min: Int?, max: Int?)
@@ -39,62 +39,62 @@
 7. Which of these is a valid syntax for iterating through the keys and values of a dictionary?  
   `let dictionary = [keyOne : valueOne, keyTwo : valueTwo]`  
   Answers:
-  * for (key, value) in dictionary { println("Key: \(key) Value: \(value)") }
+  * **for (key, value) in dictionary { println("Key: \(key) Value: \(value)") }**
   * for (key, value) in enumerate(dictionary) { println("Key: \(key) Value: \(value)") }
   * for (key, value) in (dictionary.keys, dictionary.values) { println("Key: \(key) Value: \(value)") }
-  * for (key, value) in dictionary.enumerate() { println("Key: \(key) Value: \(value)") }
+  * **for (key, value) in dictionary.enumerate() { println("Key: \(key) Value: \(value)") }**
 
 8. What is the name of the Swift language feature that Objective-C Blocks are translated into?  
   Answers:
   * Lambda
   * Callback
-  * Closur 
+  * **Closur** 
   * Selector
 
 9. Which one creates a dictionary with a key type of Integer and value of String?  
   Answers:
   * var dict:[Int: String] = ["one":1]
-  * var dict: [Int: String] = [1:"one"] 
+  * **var dict: [Int: String] = [1:"one"]**
   * var dict: [String: Int] = [1:"one"]
   * var dict = ["one":1]
 
 10. Which of these is an appropriate syntax for dispatching a heavy operation to a background thread?  
   Answers:
   * dispatch_async(DISPATCH_QUEUE_PRIORITY_BACKGROUND), { self.heavyOperation() })
-  * dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), { self.heavyOperation() }) 
+  * **dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), { self.heavyOperation() })** 
   * DISPATCH_QUEUE_PRIORITY_BACKGROUND({ self.heavyOperation() })
   * dispatch_async({ self.heavyOperation() })
 
 11. What is the name of the deinitializer in a Class declaration?  
   Answers:
-  * deinit 
+  * **deinit** 
   * dealloc
   * release
 
 12. Which of these is an appropriate syntax for declaring a function that takes an argument of a generic type?  
   Answers:
-  * `func genericFunction(argument: T&lt;Generic&gt;) { }`
-  * `func genericFunction&lt;T&gt;(argument) { }`
-  * `generic func genericFunction(argument: T) { }`
-  * `func genericFunction&lt;T&gt;(argument: T) { }`
+  * func genericFunction(argument: T&lt;Generic&gt;) { }
+  * func genericFunction&lt;T&gt;(argument) { }
+  * generic func genericFunction(argument: T) { }
+  * **func genericFunction&lt;T&gt;(argument: T) { }**
 
 13. Which of these is not a valid property declaration in Swift?  
   Answers:
   * final let x = 0
-  * final lazy let x = 0
+  * **final lazy let x = 0**
   * final lazy var x = 0
   * final var x = 0
 
 14. Which  is the wrong definition of a protocol in Swift?  
   Answers:
   * protocol SomeProtocol { var first: Int{ get } }
-  * protocol SomeProtocol { var first: Int{ set } }
+  * **protocol SomeProtocol { var first: Int{ set } }**
   * protocol SomeProtocol { var first: Int { get set } }
   * protocol SomeProtocol { var first: Int { get set } var second: Int { get } }
 
 15. Which of the following structures has both computed and stored properties?  
   Answers:
-  * `struct Rect { var origin = CGPointZero var center: CGPoint { get { // } set { // } } }`
+  * **`struct Rect { var origin = CGPointZero var center: CGPoint { get { // } set { // } } }`**
   * `struct Rect { var center: CGPoint { get { // } set { // } } }`
   * `struct Rect { let origin = CGPointZero }`
   * `struct Rect { var origin = CGPointZero var center: CGPointMake(0,0) }`
@@ -102,13 +102,13 @@
 16. Considering var index = UInt8.max, which of the following operation results to the value of zero for var index?  
   Answers:
   * index = index &- 1
-  * index = index &+ 1
+  * **index = index &+ 1**
   * index = index &* 1
   * index = index &/ 255
 
 17. All Swift classes must inherit from which root class?  
   Answers:
-  * Swift classes do not require a root class.
+  * **Swift classes do not require a root class.**
   * NSObject
   * @ObjC
   * Root
@@ -116,20 +116,20 @@
 18. Which keyword is used on a function in an enumeration to indicate that the function will modify 'self'?  
   Answers:
   * modifier
-  * mutating
+  * **mutating**
   * mutable
   * mod
   * mut
 
 19. Which is correct for Enumerations?  
   Answers:
-  * Enumerations can define initializers.
+  * **Enumerations can define initializers.**
   * Enumerations cannot conform to protocols.
   * Enumerations cannot conform to protocols.
 
 20. Which of these is a valid definition of a generic function that incorporates inout parameters in Swift?  
   Answers:
-  * `func swap&lt;T&gt;(inout a: T, inout b: T) { let temp = a a = b b = temp }`
+  * **`func swap&lt;T&gt;(inout a: T, inout b: T) { let temp = a a = b b = temp }`**
   * `func swap&lt;U,T&gt;(inout a: U, inout b: T) { let temp = a a = b b = temp }`
   * `func swap&lt;U,T&gt;( a: U, b: T) { let temp = a a = b b = temp }`
   * `func swap&lt;T&gt;( a: T, b: T) { let temp = a a = b b = temp }`
@@ -142,7 +142,7 @@
   }`  
   How would one indicate that a variable is an enum of type Status outside the context of MyClass?
   Answers:
-  * `var status: MyClass.Status = .On`
+  * **`var status: MyClass.Status = .On`**
   * `var status: Status = .On`
   * `var status: MyClass&lt;Status&gt; = .On`
   * `var status: MyClass(Status) = .On`
@@ -153,27 +153,27 @@
   }`  
   Answers:
   * func(String, String -&gt; String)
-  * (String, String) -&gt; String
+  * **(String, String) -&gt; String**
   * {String, String} -&gt; String
   * {String, String}(String)
 
 23. Which of the following statements could be used to determine if a given variable is of String type?  
   Answers:
   * if String.hierarchy(unknownVariable) { }
-  * if unknownVariable is String { }
+  * **if unknownVariable is String { }**
   * if unkownVariable: String { }
   * if (String)unknownVariable { }
 
 24. Which of these could be an appropriate protocol declaration in Swift?  
   Answers:
-  * @objc protocol someProtocal { optional var first: Int { get } }
+  * **@objc protocol someProtocal { optional var first: Int { get } }**
   * @objc protocol someProtocal { optional var first: Int { set } }
   * protocol someProtocal { optional var first: Int { get } }
   * protocol someProtocal { var first: Int { set } }
 
 25. In context of a Swift subscript, which of the following is correct?  
   Answers:
-  * `struct MyStruct { var myStr = [String]() subscript (index : Int) -&gt; String{ get{ return myStr[index] } set{ myStr[index] = newValue } } }`
+  * **`struct MyStruct { var myStr = [String]() subscript (index : Int) -&gt; String{ get{ return myStr[index] } set{ myStr[index] = newValue } } }`**
   * `struct MyStruct { var myStr = [String]() subscript (index : Int) -&gt; Int{ get{ return myStr[index] } set(newValue){ myStr[index] = newValue } } }`
   * `struct MyStruct { var myStr = [String]() subscript (index : Int) -&gt; String{ get(){ return myStr[index] } set(newValue){ myStr[index] = newValue } } }`
   * `struct MyStruct { var myStr = [String] subscript (index : Int) -&gt; String{ get(){ return myStr[index] } set(newValue){ myStr[index] = newValue } } }`
@@ -182,7 +182,7 @@
   Answers:
   * Objective-C classes are automatically imported.
   * Objective-C classes are imported in the Swift file using the class.
-  * Objective-C classes are imported via a Bridging Header.
+  * **Objective-C classes are imported via a Bridging Header.**
   * Objective-C classes import themselves by declare @SwiftImportable.
 
 27. What keyword is used to indicate a custom operator that will appear in between two targets, similar to the addition operator in this example?  
@@ -190,25 +190,25 @@
   Answers:
   * @inter
   * between
-  * infix
+  * **infix**
   * @center
 
 28. Which is correct regarding Swift enumeration members when they are defined?  
   Answers:
   * Members are assigned a default integer value.
   * Members are assigned a random default integer value.
-  * Members are not assigned default integer values.
+  * **Members are not assigned default integer values.**
 
 29. What type of object are Swift Structures?  
   Answers:
   * Reference Type
   * Memory Type
   * Abstract Type
-  * Value Type
+  * **Value Type**
 
 30. Which keyword in the context of a Switch statement is required to force the execution of a subsequent case?  
   Answers:
-  * fallthrough
+  * **fallthrough**
   * continue
   * break
   * return
@@ -218,7 +218,7 @@
   * Reference type
   * Class type
   * Collection type
-  * Value type
+  * **Value type**
 
 32. Given that we have defined myChar like so :  
   `let myChar: Character = "b"`  
@@ -227,52 +227,52 @@
   * switch myChar { case "a","A": println("The letter A") case "b","B": println("The letter A") }
   * switch myChar { case "a": println("The letter A") }
   * switch myChar { case "a": case "A": println("The letter A") default: println("Not the letter A") }
-  * switch myChar { case "a","A": println("The letter A") default: println("Not the letter A") }
+  * **switch myChar { case "a","A": println("The letter A") default: println("Not the letter A") }**
 
 33. Can enumeration type have methods?  
   Answers:
-  * Enumerations can have methods associate with them.
+  * **Enumerations can have methods associate with them.**
   * Enumerations can have only member values.
 
 34. Which of the following declares a mutable array in Swift?  
   Answers:
   * var x = [Int]
   * let x = [Int]
-  * var x = [Int]()
-  * let x = [Int]()
+  * **var x = &#91;Int&#93;&#40;&#41;**
+  * let x = &#91;Int&#93;&#40;&#41;
 
 35. Which keyword is used in Swift when we want a property of a class to initialize when it is accessed for the first time?  
   Answers:
   * let
   * var
   * const
-  * lazy
+  * **lazy**
 
 36. Which is used for down casting?  
   Answers:
-  * as!
+  * **as!**
   * is
   * is?
-  * as?
+  * **as?**
 
 37. What attribute can be used to allow a protocol to contain optional functions and to be used in ObjC?  
   Answers:
   * objective_bridge
   * ObjC
   * _objc
-  * @objc
+  * **@objc**
 
 38. Which of the following types can be used use as raw value types for an enumeration?  
   Answers:
   * Bool
   * Array
-  * Int, String, Float
+  * **Int, String, Float**
   * Dictionary
 
 39. Which keyword do you use to declare enumeration?  
   Answers:
   * var
-  * enum
+  * **enum**
   * struct
   * case
 
@@ -280,7 +280,7 @@
   Answers:
   * Semi-colon
   * Colon
-  * Comma
+  * **Comma**
   * Slash
   * Point
 
