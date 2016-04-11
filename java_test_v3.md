@@ -11,14 +11,14 @@ public class Jam {
 Choose possible valid code replacements of «//ABC» among the choices:
 
 Answers:
-* public void apple(String s, int i) {}
+* ___public void apple(String s, int i) {}___
 * public int apple(int i, String s) {}
 * public void apple(int i, String mystring) {}
 * public void Apple(int i, String s) {}
 
 2. Which of these is not an event listener adapter defined in the java.awt.event package?
 Answers:
-* ActionAdapter
+* ___ActionAdapter___
 * MouseListener
 * WindowAdapter
 * FocusListener
@@ -26,7 +26,7 @@ Answers:
 3. Which distributed object technology is most appropriate for systems that consist of objects written in different languages and that execute on different operating system platforms?
 Answers:
 * RMI
-* CORBA
+* ___CORBA___
 * COBRA
 * DCOM
 * COM
@@ -36,7 +36,7 @@ Answers:
 * It initiates a new transaction only when the previous one is concluded.
 * It initiates a new transaction without waiting for the previous one to conclude.
 * It sends the request to the EJB container for initiating a new bean.
-* The bean manages its own transaction.
+* _The bean manages its own transaction._
 
 5. Which of the following is a well-known HTTP port?
 Answers:
