@@ -1,15 +1,15 @@
 # UPWORK JAVA TEST V3 2016
 
 1. Consider the following code:  
-```public class Jam {  
-   public void apple(int i, String s) {  
-   }  
+```public class Jam {  ```
+   ``public void apple(int i, String s) {  ``
+   `} ` 
    //ABC  
 }  
-```
+
 Choose possible valid code replacements of «//ABC» among the choices:  
 Answers:
-* ___public void apple(String s, int i) {}___
+* __public void apple(String s, int i) {}__
 * public int apple(int i, String s) {}
 * public void apple(int i, String mystring) {}
 * public void Apple(int i, String s) {}  
@@ -41,12 +41,12 @@ Answers:
 * 21
 * 25
 * 8080
-* 80
+* __80__
 * 137
 
 6. Which of the following methods can be used for reporting a warning on a Connection object, Statement object & ResultSet object?
 Answers:
-* getWarnings()
+* __getWarnings()__
 * getWarned()
 * getWarning()
 * getError()
@@ -54,7 +54,7 @@ Answers:
 
 7. The principal finder method that must be implemented by every entity bean class is:
 Answers:
-* findByPrimaryKey()
+* __findByPrimaryKey()__
 * ejbGetByPrimaryKey()
 * ejbFindPrimayKey()
 * getPrimaryKey()
@@ -65,17 +65,17 @@ Answers:
 * Duplicate values will cause an error at compile time.
 * A set may contain elements that return duplicate values from a call to the equals method.
 * An exception is thrown if you attempt to add an element with a duplicate value.
-* The add method returns false if you attempt to add an element with a duplicate value.
+* __The add method returns false if you attempt to add an element with a duplicate value.__
 
 9. Why can’t a string’s compareTo method be overridden?
 Answers:
-* The String class is final, therefore its methods can’t be overridden.
+* __The String class is final, therefore its methods can’t be overridden.__
 * The String class doesn’t have a compareTo method.
 * A compareTo method isn’t built-in; it has to be manually implemented.
 
 10. Which class contains a method to create a directory?
 Answers:
-* File
+* __File__
 * DataOutput
 * Directory
 * FileDescriptor
@@ -85,33 +85,34 @@ Answers:
 Answers:
 * Collection
 * Set
-* Map
+* __Map__
 * SortedSet
+
 
 12. Assuming the servlet method for handling HTTPGET requests is doGet(HttpServletRequest req, HTTPServletResponse res), how can the request parameter in that servlet be retrieved?
 Answers:
 * String value=req.getInitParameter(10);
 * String value=req.getInitParameter(«product»);
 * String value=res.getParameter(«product»);
-* String value=req.getParameter(«product»);
+* __String value=req.getParameter(«product»);__
 
 13. Which of the following is the correct syntax for suggesting that the JVM perform garbage collection?
 Answers:
 * System.setGarbageCollection();
 * System.out.gc();
-* System.gc();
+* __System.gc();__
 * System.free();
 
 14. Which of the following methods should be invoked by the container to get a bean back to its working state?
 Answers:
 * EJBPassivate()
-* EJBActivate()
+* __EJBActivate()__
 * EJBRemove()
 * EJBOpen()
 * EJBActivation()
 
 15. What is the output of the given program?
-public class Test89 {
+```public class Test89 {
   public static void main(String[] args) {
     T x = new T(«X», null); x.start();
     T y = new T(«Y», x); y.start();
@@ -133,7 +134,7 @@ class T extends Thread {
       ie.printStackTrace();
     }
   }
-}
+}```
 Answers:
 * always XYZ
 * always ZYX
