@@ -332,7 +332,7 @@
 
 51. What is a muting instance method in Swift?  
   Answers:
-  * When there is “muting” keyword in front of extension.
+  * When there is "muting" keyword in front of extension.
   * When extension can add new types to existing classes.
   * When instance method without extension can modify itself.
   * A method that modifies self.
@@ -398,12 +398,12 @@
   * 1, -1
 
 19. How could we cast the following array into an NSArray that accesses the NSArray method:  
-  `componentsJoinedByString() &lt; let arr = [“1”, “2”, “3”]`  
+  `componentsJoinedByString() &lt; let arr = ["1", "2", "3"]`  
   Answers:
-  * arr.toNSArray.componentsJoinedByString(“,”)
-  * NSArray(arr).componentsJoinedByString(“,”)
-  * (arr as NSArray).componentsJoinedByString(“,”)
-  * (arr bridge NSArray).componentsJoinedByString(“,”)
+  * arr.toNSArray.componentsJoinedByString(",")
+  * NSArray(arr).componentsJoinedByString(",")
+  * (arr as NSArray).componentsJoinedByString(",")
+  * (arr bridge NSArray).componentsJoinedByString(",")
 
 21. What set of keywords is most commonly used to iterate over a collections of items?  
   Answers:
@@ -426,7 +426,7 @@
   * &lt;var closureName: ((parameterTypes) -&gt; (returnType))?&gt;
   * &lt;let closureName: closureType = { … }&gt;
 
-25. Let’s assume “numbers” is an array of unsorted integers. Which of these could be used to sort numbers?  
+25. Let’s assume "numbers" is an array of unsorted integers. Which of these could be used to sort numbers?  
   Answers:
   * numbers.sort({$0, $1 in $0 &gt; $1})
   * numbers.sort({s1 &gt; s2})
@@ -578,7 +578,7 @@
   * Objective-C
 
 44. Which of following expressions can be used to rewrite the following UITableView instantiation in Swift  
-  >&lt;UITableView *myTableView = [[UITableView alloc] initWithFrame: CGRectZero style: UITableViewStyleGrouped];&gt;”
+  >&lt;UITableView *myTableView = [[UITableView alloc] initWithFrame: CGRectZero style: UITableViewStyleGrouped];&gt;"
 
   Answers:
   * let myTableView: UITableView = new UITableView(frame: CGRectZero, style: .Grouped);
@@ -663,11 +663,11 @@
 
 54. In what order will the following statements appear in the console?  
   >&lt;
-  println(“1”)
+  println("1")
   dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
-  println(“2”)
+  println("2")
   });
-  println(“3”)
+  println("3")
 
   Answers:
   * 1/3/2002
@@ -683,17 +683,17 @@
   * #
 
 56. What is the result of the following code?  
-  >func potteryBarn (name: String, score: Int) -&gt; String { return “Hello (name)! Your score is (score).” }
-  potteryBarn (“Tom” , 2)
+  >func potteryBarn (name: String, score: Int) -&gt; String { return "Hello (name)! Your score is (score)." }
+  potteryBarn ("Tom" , 2)
 
   Answers:
   * Hello Tom! Your score is 2.
   * name: Tom, score: 2
   * Hello Tom!
-  * potteryBarn = “Hello Tom! Your score is 2. ”
+  * potteryBarn = "Hello Tom! Your score is 2."
 
 57. What is the return type in the following declaration:  
-  >func potteryBarn (name: String, score: Int) -&gt; String { return “Hello (name)! Your score is (score).” }
+  >func potteryBarn (name: String, score: Int) -&gt; String { return "Hello (name)! Your score is (score)." }
   
   Answers:
   * Integer
@@ -702,7 +702,7 @@
   * Constant
 
 58. What are the names of the input parameters in the following function:  
-  >func potteryBarn (name: String, score: Int) -&gt; String {return “Hello (name)! Your score is (score).”}
+  >func potteryBarn (name: String, score: Int) -&gt; String {return "Hello (name)! Your score is (score)."}
 
   Answers:
   * String, Int
@@ -728,8 +728,8 @@
   Answers:
   * let = 3.14159
   * let &lt;pi&gt; = 3.14159
-  * let = «»
-  * let = «dogcow»
+  * let = ""
+  * let = "dogcow"
 
 81. What is the correct way to compare the equality of two String type objects in Swift?
   Answers:
@@ -745,7 +745,7 @@
   * an instance of any type at all.
 
 83. What is the name of the following function:  
-  >func potteryBarn (name: String, score: Int) -&gt; String { return “Hello (name)! Your score is (score).” }
+  >func potteryBarn (name: String, score: Int) -&gt; String { return "Hello (name)! Your score is (score)." }
 
   Answers:
   * String
@@ -768,7 +768,7 @@
   * Enum
   * Structure
 
-86. What will be the final value of «a.data» and «b.data» after following codes are executed?  
+86. What will be the final value of "a.data" and "b.data" after following codes are executed?  
   >struct A { var data: Int = 2 }
   var a = A()
   var b = a
@@ -782,7 +782,7 @@
   * a.data = 5 and b.data = 5
   * a.data = 5 and b.data = 2
 
-87.How will ARC handle «Country» instance and «country2» reference when «country1» is set to «nil»?
+87.How will ARC handle "Country" instance and "country2" reference when "country1" is set to "nil"?
   >class Country{
       let name: String
       init(name: String){
@@ -791,14 +791,14 @@
   }
   var country1: Country?
   var country2: Country?
-  country1 = Country(name: «Bangladesh»)
+  country1 = Country(name: "Bangladesh")
   country2 = country1
 
   Answers:
-  * ARC will deallocate the Country instance but country2 will hold name it’s «Bangladesh»
-  * ARC will not deallocate the Country instance but country2 will become «nil»
-  * ARC will not deallocate the Country instance and country2 will hold it’s name «Bangladesh»
-  * ARC will deallocate the Country instance and country2 will become «nil»
+  * ARC will deallocate the Country instance but country2 will hold name it’s "Bangladesh"
+  * ARC will not deallocate the Country instance but country2 will become "nil"
+  * ARC will not deallocate the Country instance and country2 will hold it’s name "Bangladesh"
+  * ARC will deallocate the Country instance and country2 will become "nil"
 
 88. What is true about Memory management in Swift?  
   Answers:
@@ -852,8 +852,8 @@
   }
   var bangladesh: Country?
   var khulna: City?
-  bangladesh = Country( name: “Bangladesh” )
-  khulna = City( name: “Khulna” )
+  bangladesh = Country( name: "Bangladesh" )
+  khulna = City( name: "Khulna" )
   bangladesh?.city = khulna
   khulna?.country = bangladesh
   bangladesh = nil
@@ -910,7 +910,7 @@
   for index in 1…5 {
   ++x
   }
-  print(«\(x)»)
+  print("\(x)")
 
   Answers:
   * 4
@@ -920,7 +920,7 @@
 
 104. What is a mutating instance method in Swift?  
   Answers:
-  * When there is «mutating» keyword in front of extension.
+  * When there is "mutating" keyword in front of extension.
   * When extension can add new types to existing classes.
   * When instance method without extension can modify itself.
   * A method that modifies self
