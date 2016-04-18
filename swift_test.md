@@ -928,6 +928,30 @@ Answers:
   * Copying Value type creates an shared instance where Reference type creates independent instance
   * Value type instance share a single copy of the data where Reference type instances keeps a unique copy of its data
   * **Assigning a Value type to a new variable copies its contents to a new instance, where Reference types do not.**
-                                
+
+1. If a class has a superclass and conforms to multiple protocols, what is the correct order to list their names in the initial definition of the Subclass?  
+  Answers:              
+  * Protocols first, super class followed by comma.
+  * Protocols and super class can be listed in any order.
+  * Super class first, protocols followed by comma.
+
+2. Which one is correct function definition?  
+  Answers:              
+  * func sayHello(personName: String) -&gt; String {}
+  * func sayHello(personName-&gt; String) -&gt; String {}
+  * func sayHello(personName-&gt; String) : String {}
+  * func sayHello(personName: String) : String
+
+3.  Which of the following statements about Extensions is false?  
+  Answers:              
+  * Extensions can add new functionality to a type.
+  * Keyword for Extensions is "extension"
+  * Extensions can override existing functionality.
+  * Extensions can make an existing type confirm to a protocol
+
+
+
+
+
 
 
