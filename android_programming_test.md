@@ -1,19 +1,20 @@
 # UPWORK ANDROID PROGRAMMING TEST 2016
 
 
-1. What is the correct way to fix if checking the status of the GPS_PROVIDER throws SecurityException?
+1. What is the correct way to fix if checking the status of the GPS_PROVIDER throws SecurityException?  
   Answers:
   * request permission for ACCESS_COARSE_LOCATION
   * request permission for ACCESS_FINE_LOCATION
   * request permission for INSTALL_LOCATION_PROVIDER
   * None of the above
 
-2. Consider the code snippet below:
-  MediaPlayer mp = new MediaPlayer();
-  mp.setDataSource(PATH_TO_FILE);
-  &#60;Some code here>
-  mp.start();
-  Which of the following should be placed at &#60;Some code here>?
+2. Consider the code snippet below:  
+  >MediaPlayer mp = new MediaPlayer();  
+  mp.setDataSource(PATH_TO_FILE);  
+  &#60;Some code here>  
+  mp.start();  
+  Which of the following should be placed at &#60;Some code here>?  
+  
   Answers:
   * mp.prepare();
   * mp.prepareAsync();
@@ -22,7 +23,7 @@
   * mp.loadSource(); mp.prepare();
   * No code is required at &#60;Some code here> to start playback.
 
-3. Which of the following would you have to include in your project to use the APIs and classes required to access the camera on the mobile device?
+3. Which of the following would you have to include in your project to use the APIs and classes required to access the camera on the mobile device?  
   Answers:
   * import android.drivers;
   * import android.hardware.camera;
@@ -30,13 +31,13 @@
   * import android.util;
   * import android.hardware;
 
-4. Which of the following can be accomplished by using the TelephoneNumberUtil class?
-Answers:
-* Save a phone number to the contacts in the phone device.
-* Retrieve a phone number from the contacts in the phone device.
-* Delete a phone number from the contacts in the phone device.
-* Format an international telephone number.
-* Setting and retrieving the call forwarding phone number on the phone device.
+4. Which of the following can be accomplished by using the TelephoneNumberUtil class?  
+  Answers:
+  * Save a phone number to the contacts in the phone device.
+  * Retrieve a phone number from the contacts in the phone device.
+  * Delete a phone number from the contacts in the phone device.
+  * Format an international telephone number.
+  * Setting and retrieving the call forwarding phone number on the phone device.
 
 5. Which of the following are UI elements that you can use in a window in an Android application?
   Answers:
@@ -47,7 +48,7 @@ Answers:
   * EditText
   * RichText
 
-6. Which of the following is not Content Provider?
+6. Which of the following is not Content Provider?  
   Answers:
   * Contacts
   * Contacts
@@ -56,33 +57,34 @@ Answers:
   * Bookmarks
   * Settings
 
-7. What does the following code do?
-  SensorManager mgr = (SensorManager) getSystemService(SENSOR_SERVICE);
-  List&#60;Sensor> sensors = mgr.getSensorList(Sensor.TYPE_ALL);
-  for (Sensor sensor : sensors) {
-  System.out.println(""+sensor.getName());
-  }
+7. What does the following code do?  
+  >SensorManager mgr = (SensorManager) getSystemService(SENSOR_SERVICE);  
+  List&#60;Sensor> sensors = mgr.getSensorList(Sensor.TYPE_ALL);  
+  for (Sensor sensor : sensors) {  
+  System.out.println(""+sensor.getName());  
+  }  
+  
   Answers:
   * prints names of all available sensors in device
   * prints names of all available sensor types in device
   * prints names of all sensors which are not available
   * none of above
 
-8. Which of the following is correct to use for data transfer regularly and efficiently, but not instantaneously?
+8. Which of the following is correct to use for data transfer regularly and efficiently, but not instantaneously?  
   Answers:
   * AsyncTask
   * IntentService
   * Sync adapters
   * All of these
 
-9. What is the ListActivity class used for?
+9. What is the ListActivity class used for?  
   Answers:
   * Create a view to display a list of items from a data source.
   * List all the activities currently running on the Android device.
   * List all the activites that are installed on the Android device.
   * List the activities whose IntentFilters match with a particular Intent type.
 
-10. Which of the following would you have to include in your project to use the SimpleAdapter class?
+10. Which of the following would you have to include in your project to use the SimpleAdapter class?  
   Answers:
   * import android.content;
   * import android.widget;
@@ -90,104 +92,105 @@ Answers:
   * import android.database.sqlite;
   * import android.util;
 
-11. Which of the following is the best way to request user permission if an Android application receives location updates from both NETWORK_PROVIDER and GPS_PROVIDER?
+11. Which of the following is the best way to request user permission if an Android application receives location updates from both NETWORK_PROVIDER and GPS_PROVIDER?  
   Answers:
   * Adding this line to the Android manifest file: &#60;uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
   * Adding these two lines to the Android manifest file: &#60;uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> &#60;uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
   * Adding this line to the Android manifest file: &#60;uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
   * Adding this line to the Android manifest file: &#60;uses-permission android:name="android.permission.CONTROL_LOCATION_UPDATES" />
 
-12. Which of the following can you use to display an HTML web page in an Android application?
-Answers:
-* WebBrowser
-* BrowserView
-* WebView
-* Browser
-* HtmlView
+12. Which of the following can you use to display an HTML web page in an Android application?  
+  Answers:
+  * WebBrowser
+  * BrowserView
+  * WebView
+  * Browser
+  * HtmlView
 
-13. Which of the following statements are correct with regards to signing applications?
-a) All applications must be signed.
-b) No certificate authority is needed.
-c) When releasing application special debug key that is created by the Android SDK build tools can be used.
-Answers:
-* a) and b) are true
-* a) and c) are true
-* b) and c) are true
-* all statements are true
+13. Which of the following statements are correct with regards to signing applications?  
+  a) All applications must be signed.  
+  b) No certificate authority is needed.  
+  c) When releasing application special debug key that is created by the Android SDK build tools can be used.  
+  Answers:
+  * a) and b) are true
+  * a) and c) are true
+  * b) and c) are true
+  * all statements are true
 
-14. Which of the following is the immediate base class for Activity and Service classes?
-Answers:
-* Application
-* ApplicationContext
-* Context
-* Component
-* Object
+14. Which of the following is the immediate base class for Activity and Service classes?  
+  Answers:
+  * Application
+  * ApplicationContext
+  * Context
+  * Component
+  * Object
 
-15. Which of the following statement is correct regarding StrictMode?
-Answers:
-* StrictMode detects improper layouts
-* StrictMode detects operation which blocks UI
-* StrictMode detects the speed of the connection
-* All of the above
+15. Which of the following statement is correct regarding StrictMode?  
+  Answers:
+  * StrictMode detects improper layouts
+  * StrictMode detects operation which blocks UI
+  * StrictMode detects the speed of the connection
+  * All of the above
 
-16. Which of the following is/are appropriate for saving the state of an Android application?
-Answers:
-* Activity.onFreeze()
-* Activity.onPause()
-* Activity.onStop()
-* Activity.onDestroy()
+16. Which of the following is/are appropriate for saving the state of an Android application?  
+  Answers:
+  * Activity.onFreeze()
+  * Activity.onPause()
+  * Activity.onStop()
+  * Activity.onDestroy()
 
-17. Which of the following are true about enabling/disabling menu items from an Activity class?
-Answers:
-* onCreateOptionsMenu can be used to enable/disable some menu items in an Android application.
-* onPrepareOptionsMenu can be used to enable/disable some menu items in an Android application.
-* onShowOptionsMenu can be used to enable/disable some menu items in an Android application.
-* The menu items in an Android application cannot be disabled.
+17. Which of the following are true about enabling/disabling menu items from an Activity class?  
+  Answers:
+  * onCreateOptionsMenu can be used to enable/disable some menu items in an Android application.
+  * onPrepareOptionsMenu can be used to enable/disable some menu items in an Android application.
+  * onShowOptionsMenu can be used to enable/disable some menu items in an Android application.
+  * The menu items in an Android application cannot be disabled.
 
-18. Using a content provider, which of the following operations are able to perform?
-a) create
-b) read
-c) update
-d) delete
-Answers:
-* a, b and c
-* b, c and d
-* all of these
-* none of these
+18. Using a content provider, which of the following operations are able to perform?  
+  a) create  
+  b) read  
+  c) update  
+  d) delete  
+  Answers:
+  * a, b and c
+  * b, c and d
+  * all of these
+  * none of these
 
 19. What does the following code do?
-try {
-String token = GoogleAuthUtil.getToken(this, email, "https://www.googleapis.com/auth/devstorage.read_only");
-System.out.println(token);
-} catch (IOException e) {
-System.out.println("IOException");
-} catch (UserRecoverableAuthException e) {
-System.out.println("UserRecoverableAuthException");
-} catch (GoogleAuthException e) {
-System.out.println("GoogleAuthException");
-}
-Answers:
-* prints token
-* prints IOException
-* prints UserRecoverableAuthException
-* prints GoogleAuthException
+  >try {  
+  String token = GoogleAuthUtil.getToken(this, email,   "https://www.googleapis.com/auth/devstorage.read_only");  
+  System.out.println(token);  
+  } catch (IOException e) {  
+  System.out.println("IOException");  
+  } catch (UserRecoverableAuthException e) {  
+  System.out.println("UserRecoverableAuthException");  
+  } catch (GoogleAuthException e) {  
+  System.out.println("GoogleAuthException");  
+  }  
+  
+  Answers:
+  * prints token
+  * prints IOException
+  * prints UserRecoverableAuthException
+  * prints GoogleAuthException
 
-20. Which of the following should be used to save the unsaved data and release resources being used by an Android application?
-Answers:
-* Activity.onStop()
-* Activity.onPause()
-* Activity.onDestroy()
-* Activity.onShutdown()
-* Activity.onFreeze()
+20. Which of the following should be used to save the unsaved data and release resources being used by an Android application?  
+  Answers:
+  * Activity.onStop()
+  * Activity.onPause()
+  * Activity.onDestroy()
+  * Activity.onShutdown()
+  * Activity.onFreeze()
 
-21. Which of the following are true?
-Answers:
-* startActivity and startActivityForResult can both be used to start a new activity from your activity class.
-* Only startActivityForResult can be used to launch a new activity from your activity class.
-* startActivity(myIntent); and startActivityForResult(myIntent, -1); have the same result.
-* startActivity(myIntent); and startActivityForResult(myIntent, 0); have the same result.
-* When startActivity is used to launch a new activity from your activity class then your activity class gets notified when the new activity is completed.
-* When startActivityForResult is used to launch a new activity from your activity class then your activity class gets notified when the new activity is completed.
+21. Which of the following are true?  
+  Answers:
+  * startActivity and startActivityForResult can both be used to start a new activity from your activity class.
+  * Only startActivityForResult can be used to launch a new activity from your activity class.
+  * startActivity(myIntent); and startActivityForResult(myIntent, -1); have the same result.
+  * startActivity(myIntent); and startActivityForResult(myIntent, 0); have the same result.
+  * When startActivity is used to launch a new activity from your activity class then your activity class gets notified when the new activity is completed.
+  * When startActivityForResult is used to launch a new activity from your activity class then your activity class gets notified when the new activity is completed.
 
 22. Consider the XML fragment below, which is taken from one of the files in an Android project:  
   >&#60;MyElement xmlns:"http://schemas.androd.com/apk/res/android"  
