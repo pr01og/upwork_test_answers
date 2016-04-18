@@ -927,7 +927,7 @@ Answers:
   Answers:              
   * Copying Value type creates an shared instance where Reference type creates independent instance
   * Value type instance share a single copy of the data where Reference type instances keeps a unique copy of its data
-  * Assigning a Value type to a new variable copies its contents to a new instance, where Reference types do not.
+  * **Assigning a Value type to a new variable copies its contents to a new instance, where Reference types do not.**
                                 
 
 
