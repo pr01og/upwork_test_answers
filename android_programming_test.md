@@ -2,33 +2,33 @@
 
 
 1. What is the correct way to fix if checking the status of the GPS_PROVIDER throws SecurityException?
-Answers:
-* request permission for ACCESS_COARSE_LOCATION
-* request permission for ACCESS_FINE_LOCATION
-* request permission for INSTALL_LOCATION_PROVIDER
-* None of the above
+  Answers:
+  * request permission for ACCESS_COARSE_LOCATION
+  * request permission for ACCESS_FINE_LOCATION
+  * request permission for INSTALL_LOCATION_PROVIDER
+  * None of the above
 
 2. Consider the code snippet below:
-MediaPlayer mp = new MediaPlayer();
-mp.setDataSource(PATH_TO_FILE);
-<Some code here>
-mp.start();
-Which of the following should be placed at <Some code here>?
-Answers:
-* mp.prepare();
-* mp.prepareAsync();
-* mp.loadMedia();
-* mp.loadSource();
-* mp.loadSource(); mp.prepare();
-* No code is required at <Some code here> to start playback.
+  MediaPlayer mp = new MediaPlayer();
+  mp.setDataSource(PATH_TO_FILE);
+  <Some code here>
+  mp.start();
+  Which of the following should be placed at <Some code here>?
+  Answers:
+  * mp.prepare();
+  * mp.prepareAsync();
+  * mp.loadMedia();
+  * mp.loadSource();
+  * mp.loadSource(); mp.prepare();
+  * No code is required at <Some code here> to start playback.
 
 3. Which of the following would you have to include in your project to use the APIs and classes required to access the camera on the mobile device?
-Answers:
-* import android.drivers;
-* import android.hardware.camera;
-* import android.camera;
-* import android.util;
-* import android.hardware;
+  Answers:
+  * import android.drivers;
+  * import android.hardware.camera;
+  * import android.camera;
+  * import android.util;
+  * import android.hardware;
 
 4. Which of the following can be accomplished by using the TelephoneNumberUtil class?
 Answers:
@@ -39,63 +39,63 @@ Answers:
 * Setting and retrieving the call forwarding phone number on the phone device.
 
 5. Which of the following are UI elements that you can use in a window in an Android application?
-Answers:
-* TextBox
-* TextView
-* TextField
-* TextElement
-* EditText
-* RichText
+  Answers:
+  * TextBox
+  * TextView
+  * TextField
+  * TextElement
+  * EditText
+  * RichText
 
 6. Which of the following is not Content Provider?
-Answers:
-* Contacts
-* Contacts
-* Shared Preferences
-* MediaStore
-* Bookmarks
-* Settings
+  Answers:
+  * Contacts
+  * Contacts
+  * Shared Preferences
+  * MediaStore
+  * Bookmarks
+  * Settings
 
 7. What does the following code do?
-SensorManager mgr = (SensorManager) getSystemService(SENSOR_SERVICE);
-List<Sensor> sensors = mgr.getSensorList(Sensor.TYPE_ALL);
-for (Sensor sensor : sensors) {
-System.out.println(«»+sensor.getName());
-}
-Answers:
-* prints names of all available sensors in device
-* prints names of all available sensor types in device
-* prints names of all sensors which are not available
-* none of above
+  SensorManager mgr = (SensorManager) getSystemService(SENSOR_SERVICE);
+  List<Sensor> sensors = mgr.getSensorList(Sensor.TYPE_ALL);
+  for (Sensor sensor : sensors) {
+  System.out.println(«»+sensor.getName());
+  }
+  Answers:
+  * prints names of all available sensors in device
+  * prints names of all available sensor types in device
+  * prints names of all sensors which are not available
+  * none of above
 
 8. Which of the following is correct to use for data transfer regularly and efficiently, but not instantaneously?
-Answers:
-* AsyncTask
-* IntentService
-* Sync adapters
-* All of these
+  Answers:
+  * AsyncTask
+  * IntentService
+  * Sync adapters
+  * All of these
 
 9. What is the ListActivity class used for?
-Answers:
-* Create a view to display a list of items from a data source.
-* List all the activities currently running on the Android device.
-* List all the activites that are installed on the Android device.
-* List the activities whose IntentFilters match with a particular Intent type.
+  Answers:
+  * Create a view to display a list of items from a data source.
+  * List all the activities currently running on the Android device.
+  * List all the activites that are installed on the Android device.
+  * List the activities whose IntentFilters match with a particular Intent type.
 
 10. Which of the following would you have to include in your project to use the SimpleAdapter class?
-Answers:
-* import android.content;
-* import android.widget;
-* import android.database;
-* import android.database.sqlite;
-* import android.util;
+  Answers:
+  * import android.content;
+  * import android.widget;
+  * import android.database;
+  * import android.database.sqlite;
+  * import android.util;
 
 11. Which of the following is the best way to request user permission if an Android application receives location updates from both NETWORK_PROVIDER and GPS_PROVIDER?
-Answers:
-* Adding this line to the Android manifest file: <uses-permission android:name=»android.permission.ACCESS_FINE_LOCATION» />
-* Adding these two lines to the Android manifest file: <uses-permission android:name=»android.permission.ACCESS_FINE_LOCATION» /> <uses-permission android:name=»android.permission.ACCESS_COARSE_LOCATION» />
-* Adding this line to the Android manifest file: <uses-permission android:name=»android.permission.ACCESS_FINE_LOCATION» />
-* Adding this line to the Android manifest file: <uses-permission android:name=»android.permission.CONTROL_LOCATION_UPDATES» />
+  Answers:
+  * Adding this line to the Android manifest file: <uses-permission android:name=»android.permission.ACCESS_FINE_LOCATION» />
+  * Adding these two lines to the Android manifest file: <uses-permission android:name=»android.permission.ACCESS_FINE_LOCATION» /> <uses-permission android:name=»android.permission.ACCESS_COARSE_LOCATION» />
+  * Adding this line to the Android manifest file: <uses-permission android:name=»android.permission.ACCESS_FINE_LOCATION» />
+  * Adding this line to the Android manifest file: <uses-permission android:name=»android.permission.CONTROL_LOCATION_UPDATES» />
 
 12. Which of the following can you use to display an HTML web page in an Android application?
 Answers:
