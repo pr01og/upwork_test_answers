@@ -287,7 +287,7 @@
 41. How do closures capture references to variables by default?  
   Answers:
   * By weak reference
-  * By strong reference
+  * **By strong reference**
   * By unowned reference
   * By copy
 
@@ -297,15 +297,16 @@
   * new func
   * var
   * let
-  * func
+  * **func**
 
 46. Which of the folowing could be used to indicate the Function Type of the folowing function:  
-  `func joinStrings(stringOne: String, stringTwo: String) -&gt; String {
+  >func joinStrings(stringOne: String, stringTwo: String) -&gt; String {
       return stringOne + stringTwo
-  }`
+  }
+  
   Answers:
   * func(String, String -&gt; String)
-  * (String, String) -&gt; String
+  * **(String, String) -&gt; String**
   * {String, String} -&gt; String
   * {String, String}(String)
 
@@ -313,7 +314,7 @@
   Answers:
   * Ob
   * id
-  * AnyObject
+  * **AnyObject**
   * Nothing
 
 48. What is the name of the Objective-C Bridging Header given a product module named Example?  
@@ -321,11 +322,11 @@
   * Example-Bridging-Swift.h
   * Example-Swift.h
   * Example-Bridging-ObjectiveC.h
-  * Example-Bridging-Header.h
+  * **Example-Bridging-Header.h**
 
 53. What is the name that represents a character in Swift?  
   Answers:
-  * Character
+  * **Character**
   * Char
   * String
   * NSString
@@ -334,7 +335,7 @@
   Answers:
   * When there is "muting" keyword in front of extension.
   * When extension can add new types to existing classes.
-  * When instance method without extension can modify itself.
+  * **When instance method without extension can modify itself.**
   * A method that modifies self.
 
 56. Swift Extensions are similar to categories in Objective-C except:  
@@ -342,7 +343,7 @@
   * Swift extension might have a specific name
   * Swift extension doesn’t functionality to previously defined type.
   * Swift can override method from original type.
-  * Swift extensions are not named.
+  * **Swift extensions are not named.**
 
 57. Considering the following code, which statement is Correct:  
   `let array1 = ["A", "B", "C"]
@@ -350,49 +351,33 @@
   array2.append("D")`  
   Answers:
   * array1 will be copied to array2 after the assignment
-  * Reference count of array1 won't change after the assignment
+  * **Reference count of array1 won't change after the assignment**
   * array1 will change to [A, B, C, D] after appending D
   * Code will not compile, can not assign constant array1 to variable array2
-
-58. Which is the wrong definition of a protocol in Swift?  
-  Answers:
-  * protocol SomeProtocol {
-      var first: Int{get}
-  }
-  * protocol SomeProtocol {
-      var first: Int{set}
-  }
-  * protocol SomeProtocol {
-      var first: Int {get set}
-  }
-  * protocol SomeProtocol{
-      var first: Int {get set}
-      var second: Int {get}
-  }
 
 63. How could we create a subclass of the Structure, CGRect?  
   Answers:
   * struct MyRect: CGRect {}
   * struct CGRect(MyRect) {}
-  * You can not subclass a Structure
+  * **You can not subclass a Structure**
   * struct MyRect extends CGRect {}
 
 16. Which is correct regarding optional form of the type cast operator (as?)?  
   Answers:
   * It will trigger a runtime error if you try to downcast to an incorrect class type.
   * This is used when you are sure that the downcast will always succeed
-  * Return value will be nil if the downcast was not possible
+  * **Return value will be nil if the downcast was not possible**
 
 17. How could one declare a Swift Array type that can store any type of class object?  
   Answers:
   * var arr: [id] = [ ]
-  * var arr: [AnyObject] = [ ]
+  * **var arr: [AnyObject] = [ ]**
   * [AnyObject] arr = [ ]
   * var arr = NSArray&lt;AnyObject&gt;()
 
 18. What is the return value of type check operator — is ?  
   Answers:
-  * true, false
+  * **true, false**
   * 0, 1
   * yes, no
   * 1, -1
@@ -402,7 +387,7 @@
   Answers:
   * arr.toNSArray.componentsJoinedByString(",")
   * NSArray(arr).componentsJoinedByString(",")
-  * (arr as NSArray).componentsJoinedByString(",")
+  * **(arr as NSArray).componentsJoinedByString(",")**
   * (arr bridge NSArray).componentsJoinedByString(",")
 
 21. What set of keywords is most commonly used to iterate over a collections of items?  
@@ -410,32 +395,32 @@
   * for each
   * switch case
   * do while
-  * for in
+  * **for in**
 
 22. How can we use optional binding to determine if the variable string is not nil?  
   Answers:
-  * &lt;if let str = string {…}&gt;
-  * &lt;if string {…}&gt;
-  * &lt;if string as String {…}&gt;
-  * &lt;if let string {…}&gt;
+  * **if let str = string {…}**
+  * if string {…}
+  * if string as String {…}
+  * if let string {…}
 
 24. Choose the answer that declares an optional closure.  
   Answers:
-  * &lt;var closureName: (parameterTypes) -&gt; (returnType)&gt;
-  * &lt;typealias closureType = (parameterTypes) -&gt; (returnType)&gt;
-  * &lt;var closureName: ((parameterTypes) -&gt; (returnType))?&gt;
-  * &lt;let closureName: closureType = { … }&gt;
+  * var closureName: (parameterTypes) -&gt; (returnType)
+  * typealias closureType = (parameterTypes) -&gt; (returnType)
+  * **var closureName: ((parameterTypes) -&gt; (returnType))**
+  * let closureName: closureType = { … }
 
 25. Let’s assume "numbers" is an array of unsorted integers. Which of these could be used to sort numbers?  
   Answers:
   * numbers.sort({$0, $1 in $0 &gt; $1})
   * numbers.sort({s1 &gt; s2})
-  * numbers.sort({$0 &gt; $1})
+  * **numbers.sort({$0 &gt; $1})**
   * numbers.sort(){s1 &gt; s2}
 
 26. What symbol is used like a tuple to access arguments in Abbreviated Swift Closure syntax?  
   Answers:
-  * $
+  * **$**
   * *
   * &
   * @
@@ -447,30 +432,30 @@
   }&gt;
   
   Answers:
-  * &lt;funcWithClosure ({
+  * funcWithClosure ({
   //closure’s body goes here
-  })&gt;
-  * &lt;funk funcWithClosure ({
+  })
+  * funk funcWithClosure ({
   //closure’s body goes here
-  })&gt;
-  * &lt;funcWithClosure() {
+  })
+  * **funcWithClosure() {
   //closure’s body goes here
-  }&gt;
-  * &lt;funcWithClosure {
+  }**
+  * funcWithClosure {
   //closure’s body goes here
-  )&gt;
+  )
 
-28. How could the following closure be rewritten to use shorthand arguments? s2 } )&gt;  
+28. How could the following closure be rewritten to use shorthand arguments? s2 } )  
   Answers:
-  * &lt;reversed = sorted(names, { $0 ,$1 in $0 &gt; $1 } )&gt;
-  * &lt;reversed = sorted(names, { $0 &gt; $1 } )&gt;
-  * &lt;reversed = sorted(names, { $0 ,$1 } )&gt;
-  * &lt;reversed = sorted( { $0 &gt; $1 } )&gt;
+  * reversed = sorted(names, { $0 ,$1 in $0 &gt; $1 } )
+  * reversed = sorted(names, { $0 &gt; $1 } )
+  * reversed = sorted(names, { $0 ,$1 } )
+  * reversed = sorted( { $0 &gt; $1 } )
 
 29. What is a trailing closure?  
   Answers:
   * A closure expression that is called directly after another closure expression
-  * A closure expression that is written outside of (and after) the parentheses of the function call it supports.
+  * **A closure expression that is written outside of (and after) the parentheses of the function call it supports.**
   * A closure expression that is declared within the scope of another closure expression.
   * A closure expression that is declared at the property of an object.
 
@@ -478,77 +463,77 @@
   Answers:
   * Functions and Closures are not related
   * A Function is a Closure declared within the scope of a Class
-  * A Function is a named Closure
+  * **A Function is a named Closure**
   * Closures can’t be used as arguments, Functions can
 
 33. What are the available arithmetic overflow operators in Swift?  
   Answers:
   * op+,op-,op*,op/,op%
-  * &+,&-,&*,&/,&%
+  * **&+,&-,&*,&/,&%**
   * +,-,*,/,%
   * &, |, &&, ||
 
 34. What specifies custom infix operator?  
   Answers:
-  * it is a binary operator, taking a left and right hand argument
+  * **it is a binary operator, taking a left and right hand argument**
   * it is a unary operator written before its operand
   * it is a unary operator written after its operand
   * it is a reserved word that must be preceded with **
 
 35. Which of following statements about functions is wrong?  
   Answers:
-  * In-out parameters might have a default value
+  * **In-out parameters might have a default value**
   * Function might have multiple return values
   * Function might not have return values
   * Function names might be the same with another but at least one parameter should be different
 
 37. In the below text, what type of return does the function ‘area’ give?  
-  >Class Square: NamedShape {
-  var sideLength: Double
-      func area() -&gt; Double { 
-          return sideLength*sideLength 
-      } 
-  }
+  >Class Square: NamedShape {  
+  var sideLength: Double  
+  func area() -&gt; Double {  
+  return sideLength*sideLength  
+  }   
+  }  
 
   Answers:
   * Int
   * the area of a square
-  * Double
+  * **Double**
   * area
 
 38. In the below text, what is the class name?  
-  >Class Square: NamedShape {
-  var sideLength: Double
-      func area() -&gt; Double { 
-          return sideLength*sideLength 
-      } 
-  }
+  >Class Square: NamedShape {  
+  var sideLength: Double  
+  func area() -&gt; Double {  
+  return sideLength*sideLength  
+  }  
+  }  
 
   Answers:
   * NamedShape
-  * Square
+  * **Square**
   * class
   * Double
   * sideLength
 
 39. In the below text, what is the name of the class’s only method?  
-  >Class Square: NamedShape {
-      var sideLength: Double
-      func area() -&gt; Double { 
-          return sideLength*sideLength 
-      } 
-  }
+  >Class Square: NamedShape {  
+  var sideLength: Double  
+  func area() -&gt; Double {  
+  return sideLength*sideLength  
+  }  
+  }  
 
   Answers:
   * sideLength
-  * area
+  * **area**
   * Square
   * NamedShape
   * Double
 
 40. What aspect of iOS development requires the use of NSOperation and/or Grand Central Dispatch (GCD)?  
   Answers:
-  * Multithreading
+  * **Multithreading**
   * serial task
   * None
   * Message Sending
@@ -558,13 +543,13 @@
   
   Answers:
   * GroupObject
-  * Tuple
+  * **Tuple**
   * Ordered
   * Struct
 
 42. Swift can compile alongside what other language?  
   Answers:
-  * Objective C (Objective-C)
+  * **Objective C (Objective-C)**
   * Ruby
   * Scala
   * Erlang
@@ -574,51 +559,51 @@
   * C
   * C++
   * Ruby
-  * Machine code
+  * **Machine code**
   * Objective-C
 
 44. Which of following expressions can be used to rewrite the following UITableView instantiation in Swift  
-  >&lt;UITableView *myTableView = [[UITableView alloc] initWithFrame: CGRectZero style: UITableViewStyleGrouped];&gt;"
+  >UITableView *myTableView = [[UITableView alloc] initWithFrame: CGRectZero style: UITableViewStyleGrouped];
 
   Answers:
   * let myTableView: UITableView = new UITableView(frame: CGRectZero, style: .Grouped);
   * let myTableView: UITableView = UITableView.alloc().init(frame: CGRectZero, style: .Grouped);
-  * let myTableView: UITableView = UITableView(frame: CGRectZero, style: .Grouped);
+  * **let myTableView: UITableView = UITableView(frame: CGRectZero, style: .Grouped);**
   * let myTableView: UITableView = UITableView(frame: CGRectZero, style: UITableViewStyleGrouped)
 
 45. Which of these operators is used to check whether or not two instances are identical?  
   Answers:
-  * ==
+  * **==**
   * =
   * equalsTo
   * ===
   * identicalTo
 
 46. In the bellow text, what is the super class name?  
-  >class Square: NamedShape {
-      var sideLenght: Double
-      func area() -&gt; Double {
-          return sideLenght * sideLenght 
-      } 
-  }
+  >class Square: NamedShape {  
+  var sideLenght: Double  
+  func area() -&gt; Double {  
+  return sideLenght * sideLenght  
+  }  
+  }  
 
   Answers:
   * Square
   * Double
   * area
   * sideLenght
-  * NamedShape
+  * **NamedShape**
 
 47. In the bellow text, what is the property name?  
-  >class Square: NamedShape {
-      var sideLenght: Double
-      func area() -&gt; Double {
-          return sideLenght * sideLenght 
-      } 
-  }
+  >class Square: NamedShape {  
+  var sideLenght: Double  
+  func area() -&gt; Double {  
+  return sideLenght * sideLenght  
+  }  
+  }  
 
   Answers:
-  * sideLenght
+  * **sideLenght**
   * Square
   * NamedShape
   * area
@@ -628,16 +613,16 @@
   Answers:
   * didSet will be called again
   * It will create an infinite loop
-  * The property will take on that value
+  * **The property will take on that value**
   * Code will not compile
 
 49. Which of the following is correct to cube Integer?  
   Answers:
-  * extension Int {
+  * **extension Int {
   mutating func cube () {
   self = self*self*self
   }
-  }
+  }**
   * extension Int {
   mutating func cube () {
   return self*self*self
@@ -659,25 +644,22 @@
   * BackgroundQueue
   * UIQueue
   * Any Queue
-  * MainQueue
+  * **MainQueue**
 
 54. In what order will the following statements appear in the console?  
-  >&lt;
-  println("1")
-  dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
-  println("2")
-  });
-  println("3")
+  >println("1")  
+  dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {println("2")});  
+  println("3")  
 
   Answers:
-  * 1/3/2002
-  * 3/1/2002
-  * 1/2/2003
+  * **1/3/2**
+  * 3/1/2
+  * 1/2/3
   * 2, 1,2
 
 55. When declaring a function, what symbol is used to indicate that an internal parameter name should also be used as an external parameter?  
   Answers:
-  * _
+  * _ **(right answer)**
   * @
   * :
   * #
@@ -687,7 +669,7 @@
   potteryBarn ("Tom" , 2)
 
   Answers:
-  * Hello Tom! Your score is 2.
+  * **Hello Tom! Your score is 2.**
   * name: Tom, score: 2
   * Hello Tom!
   * potteryBarn = "Hello Tom! Your score is 2."
@@ -697,7 +679,7 @@
   
   Answers:
   * Integer
-  * String
+  * **String**
   * Function
   * Constant
 
@@ -707,12 +689,12 @@
   Answers:
   * String, Int
   * potteryBarn
-  * name, score
+  * **name, score**
 
 60. Which is the correct optional form of a down cast operator?  
   Answers:
   * as
-  * as?
+  * **as?**
   * as!
   * as.
   * as&gt;&gt;
@@ -722,25 +704,25 @@
   * for i in 0…8
   * for i in 0&gt;..9
   * for i in 1&lt;..8
-  * for i in 1..&lt;9
+  * **for i in 1..&lt;9**
 
 80. Which of these is an invalid constant or variable declaration?  
   Answers:
-  * let = 3.14159
+  * **let = 3.14159**
   * let &lt;pi&gt; = 3.14159
   * let = ""
   * let = "dogcow"
 
-81. What is the correct way to compare the equality of two String type objects in Swift?
+81. What is the correct way to compare the equality of two String type objects in Swift?  
   Answers:
   * equalsTo
-  * ==
+  * **==**
   * isEqual
   * &gt;=&lt;
 
-82. AnyObject can represent:
+82. AnyObject can represent:  
   Answers:
-  * an instance of any class type.
+  * **an instance of any class type.**
   * function types.
   * an instance of any type at all.
 
@@ -750,12 +732,12 @@
   Answers:
   * String
   * name: String, score: Int
-  * potteryBarn
+  * **potteryBarn**
   * func
 
 84. Which keyword do you use to define a function?  
   Answers:
-  * func
+  * **func**
   * function
   * procedure
   * let
@@ -763,104 +745,104 @@
 
 85. What is the type of Swift String, Dictionary, Array?  
   Answers:
-  * Class
+  * **Class**
   * Union
   * Enum
   * Structure
 
 86. What will be the final value of "a.data" and "b.data" after following codes are executed?  
-  >struct A { var data: Int = 2 }
-  var a = A()
-  var b = a
-  var c = b
-  c.data = 10
-  a.data = 5
+  >struct A { var data: Int = 2 }  
+  var a = A()  
+  var b = a  
+  var c = b  
+  c.data = 10  
+  a.data = 5  
 
   Answers:
   * a.data = 10 and b.data = 2
   * a.data = 2 and b.data = 5
   * a.data = 5 and b.data = 5
-  * a.data = 5 and b.data = 2
+  * **a.data = 5 and b.data = 2**
 
-87.How will ARC handle "Country" instance and "country2" reference when "country1" is set to "nil"?
-  >class Country{
-      let name: String
-      init(name: String){
-          self.name = name
-      }
-  }
-  var country1: Country?
-  var country2: Country?
-  country1 = Country(name: "Bangladesh")
-  country2 = country1
+87. How will ARC handle "Country" instance and "country2" reference when "country1" is set to "nil"?
+  >class Country{  
+  let name: String  
+  init(name: String){  
+  self.name = name  
+  }  
+  }  
+  var country1: Country?  
+  var country2: Country?  
+  country1 = Country(name: "Bangladesh")  
+  country2 = country1  
 
   Answers:
   * ARC will deallocate the Country instance but country2 will hold name it’s "Bangladesh"
   * ARC will not deallocate the Country instance but country2 will become "nil"
-  * ARC will not deallocate the Country instance and country2 will hold it’s name "Bangladesh"
+  * **ARC will not deallocate the Country instance and country2 will hold it’s name "Bangladesh"**
   * ARC will deallocate the Country instance and country2 will become "nil"
 
 88. What is true about Memory management in Swift?  
   Answers:
   * Swift uses Non-ARC so we need to handle the references manually.
-  * Swift uses ARC but we still need to avoid reference cycles using weak and strong references etc.
+  * **Swift uses ARC but we still need to avoid reference cycles using weak and strong references etc.**
   * Swift uses ARC so we don’t need to care about memory management at all.
   * NA
 
 89. To which of these types does ARC apply?  
   Answers:
-  * Class
+  * **Class**
   * Structure
   * Enumeration
   * Basic types (String, Int, Bool)
 
 90. Why are IBOutlets declared with a weak attribute by default?  
   Answers:
-  * IBOutlets are not declared with a weak attribute by default.
+  * **IBOutlets are not declared with a weak attribute by default.**
   * To save memory
   * To increase loading speed
   * They are already retained by the view
 
 91. How could we declare a custom protocol that inherits from Equatable?  
   Answers:
-  * protocol CustomEquatable: Equatable {…}
+  * **protocol CustomEquatable: Equatable {…}**
   * protocol CustomEquatable, Equatable {…}
   * protocol CustomEquatable extends Equatable {…}
   * protocol CustomEquatable&lt;Equatable&gt; {…}
 
 92. How can you use a nested type outside of its definition?  
   Answers:
-  * Prefix its name with the name of the type it is nested within.
+  * **Prefix its name with the name of the type it is nested within.**
   * It’s impossible, nested types can’t be used outside of definition.
   * It can be used from anywhere in the same block.
   * Use generic type for definition.
 
 93. Which is correct for the following codes?  
-  >class Country{
-      let name: String
-      init(name: String){
-          self.name = name;
-      }
-      var city: City?
-  }
-  class City{
-      let name: String
-      init(name: String){
-          self.name = name;
-      }
-      var country: Country?
-  }
-  var bangladesh: Country?
-  var khulna: City?
-  bangladesh = Country( name: "Bangladesh" )
-  khulna = City( name: "Khulna" )
-  bangladesh?.city = khulna
-  khulna?.country = bangladesh
-  bangladesh = nil
-  khulna = nil
+  >class Country{  
+  let name: String  
+  init(name: String){  
+  self.name = name;  
+  }  
+  var city: City?  
+  }  
+  class City{  
+  let name: String  
+  init(name: String){  
+  self.name = name;  
+  }  
+  var country: Country?  
+  }  
+  var bangladesh: Country?  
+  var khulna: City?  
+  bangladesh = Country( name: "Bangladesh" )  
+  khulna = City( name: "Khulna" )  
+  bangladesh?.city = khulna  
+  khulna?.country = bangladesh  
+  bangladesh = nil  
+  khulna = nil  
 
   Answers:
-  * Neither Country, nor City will be deallocated.
+  * **Neither Country, nor City will be deallocated.**
   * Both Country and City instance will be deallocated.
   * Only Country instance will be deallocated.
   * Only City instance will be deallocated.
@@ -868,7 +850,7 @@
 94. Which keyword is used to declare an extension in Swift?  
   Answers:
   * extend
-  * extension
+  * **extension**
   * typealias
   * mutating
   * subscript
@@ -877,30 +859,19 @@
   Answers:
   * Both incorporate Inheritance
   * Both use reference counting
-  * Both can be extended
+  * **Both can be extended**
   * Both are value types
 
 96. How could we extend String to conform to protocol MyProtocol?
   Answers:
   * extension String(MyProtocol) { }
   * extension String, prot MyProtocol { }
-  * extension String: MyProtocol { }
+  * **extension String: MyProtocol { }**
   * extension String, MyProtocol { }
-
- 97. Which of the followings could be used to indicate the Function Type of the following function:
-  >func joinStrings(stringOne: String, stringTwo: String) -&gt; String {
-  return stringOne + stringTwo
-  }
-
-  Answers:
-  * func(String, String -&gt; String)
-  * (String, String) -&gt; String
-  * {String, String} -&gt; String
-  * {String, String}(String)
 
 98. Which keyword do you use to define a class?
   Answers:
-  * class
+  * **class**
   * method
   * var
   * property
@@ -914,27 +885,20 @@
 
   Answers:
   * 4
-  * 5
+  * **5**
   * 6
   * None of this
-
-104. What is a mutating instance method in Swift?  
-  Answers:
-  * When there is "mutating" keyword in front of extension.
-  * When extension can add new types to existing classes.
-  * When instance method without extension can modify itself.
-  * A method that modifies self
 
 105. Can Structures be type cast in Swift?  
   Answers:
   * Yes
-  * No
+  * **No**
   * Only those deriving from NSObject
   * Only when they conform to protocol TypeCast
 
 106. Which keyword do you use to define a protocol?  
   Answers:
-  * protocol
+  * **protocol**
   * interface
   * struct
   * class
