@@ -48,7 +48,7 @@
   Answers:
   * Lambda
   * Callback
-  * **Closur** 
+  * **Closure** 
   * Selector
 
 9. Which one creates a dictionary with a key type of Integer and value of String?  
@@ -665,7 +665,7 @@
   * #
 
 56. What is the result of the following code?  
-  >func potteryBarn (name: String, score: Int) -&gt; String { return "Hello (name)! Your score is (score)." }
+  >func potteryBarn (name: String, score: Int) -&gt; String { return "Hello (name)! Your score is (score)." }  
   potteryBarn ("Tom" , 2)
 
   Answers:
