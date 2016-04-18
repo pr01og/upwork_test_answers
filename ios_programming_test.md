@@ -23,10 +23,10 @@
 
 4. Which of the following will set an image on UIButton?
   Answers:
-  * button.image = [UIImage imageNamed:@»btn_img.png»];
-  * button.imageView.image = [UIImage imageNamed:@»btn_img.png»];
-  * [button setImage:[UIImage imageNamed:@»btn_img.png»] forState:UIControlStateNormal];
-  * [button setImageView:[UIImage imageNamed:@»btn_img.png»] forState:UIControlStateNormal];
+  * button.image = [UIImage imageNamed:@"btn_img.png"];
+  * button.imageView.image = [UIImage imageNamed:@"btn_img.png"];
+  * [button setImage:[UIImage imageNamed:@"btn_img.png"] forState:UIControlStateNormal];
+  * [button setImageView:[UIImage imageNamed:@"btn_img.png"] forState:UIControlStateNormal];
 
 5. Which of the following is the best way to add a UIToolbar above keyboard?
   Answers:
@@ -58,9 +58,9 @@ Answers:
 
 9. What is the correct method to define a delegate object in an ARC Environment?
 Answers:
-* @property (nonatomic, weak) id <MyClassDelegate> delegate;
-* @property(nonatomic,retain) id <MyClassDelegate> delegate;
-* @property(nonatomic,weak) <MyClassDelegate> delegate;
+* @property (nonatomic, weak) id &#60;MyClassDelegate> delegate;
+* @property(nonatomic,retain) id &#60;MyClassDelegate> delegate;
+* @property(nonatomic,weak) &#60;MyClassDelegate> delegate;
 * @property(nonatomic, weak) NSObject *delegate;
 
 10. Is it possible to set multiple architecture from Build Settings tab in Xcode for a project?
@@ -199,12 +199,12 @@ Answers:
 29. Which of the following will set the font of UISegmentedControl?
 Answers:
 * UIFont *font = [UIFont boldSystemFontOfSize:12.0f]; NSDictionary *attributes = [NSDictionary dictionaryWithObject:font forKey:UITextAttributeFont]; [segmentedControl setTitleTextAttributes:attributes forState:UIControlStateNormal];
-* [[UISegmentedControl appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@»STHeitiSC-Medium» size:13.0], UITextAttributeFont, nil] forState:UIControlStateNormal];
+* [[UISegmentedControl appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"STHeitiSC-Medium" size:13.0], UITextAttributeFont, nil] forState:UIControlStateNormal];
 * segmentedControl.transform = CGAffineTransformMakeScale(.6f, .6f);
 * None of these.
 
 30. When does this behavior usually happen?
-«Xcode Message: finished running <my app>» on targeted device shows, but nothing happens
+"Xcode Message: finished running &#60;my app>" on targeted device shows, but nothing happens
 Answers:
 * If the app was ran on earlier devices (3G or 3GS) and arm6 was not added in Require Device Capabilities.
 * If app was built and ran on version 3.2 or earlier of Xcode and arm7 was not added in Require Device Capabilities.
@@ -273,7 +273,7 @@ Answers:
 // Set Background Color/Pattern
 self.window.backgroundColor = [UIColor blackColor];
 self.tabBarController.tabBar.backgroundColor = [UIColor clearColor];
-//self.window.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@»testbg.png»]];
+//self.window.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"testbg.png"]];
 // Set StatusBar Color
 [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent];
 // Add the tab bar controller’s current view as a subview of the window
@@ -281,7 +281,7 @@ self.window.rootViewController = self.tabBarController;
 [self.window makeKeyAndVisible];
 return YES;
 }
-How can the error be corrected that gets thrown in the console, «Applications are expected to have a root view controller at the end of application launch»?
+How can the error be corrected that gets thrown in the console, "Applications are expected to have a root view controller at the end of application launch"?
 Answers:
 * self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
 * MenuViewController *menuViewController = [[MenuViewController alloc]init]; self.window.rootViewController = menuViewController;
@@ -290,10 +290,10 @@ Answers:
 
 40. Which of the following allows it to determine if an application is running on iPhone, or if it’s running on an iPod Touch?
 Answers:
-* NSString *deviceType = [UIDevice currentDevice].model; if([deviceType isEqualToString:@»iPhone»])
-* NSString *deviceType = [UIDevice currentDevice].Size; if([deviceType isEqualToString:@»iPhone»])
-* NSString *deviceType = [UIDevice currentDevice].device; if([deviceType isEqualToString:@»Device»])
-* NSString *deviceType = [UIDevice currentDevice].iPhone; if([deviceType isEqualToString:@»iPhone»])
+* NSString *deviceType = [UIDevice currentDevice].model; if([deviceType isEqualToString:@"iPhone"])
+* NSString *deviceType = [UIDevice currentDevice].Size; if([deviceType isEqualToString:@"iPhone"])
+* NSString *deviceType = [UIDevice currentDevice].device; if([deviceType isEqualToString:@"Device"])
+* NSString *deviceType = [UIDevice currentDevice].iPhone; if([deviceType isEqualToString:@"iPhone"])
 
 41. What is true about ARC and manual memory management?
 Answers:
@@ -302,7 +302,7 @@ Answers:
 * nil out properties in dealloc under ARC but not in manual memory management.
 * nil out properties in dealloc under manual memory management but not in ARC.
 
-42. What does the «strong» property attribute do?
+42. What does the "strong" property attribute do?
 Answers:
 * It does not extend the lifetime of the object it points to, and automatically becomes nil.
 * It specifies a reference that does not keep the referenced object alive and is not set to nil.
@@ -312,9 +312,9 @@ Answers:
 43. Which of the following is the best practice to find an active internet connection?
 Answers:
 * — (BOOL) connectedToInternet { Reachability *reachability = [Reachability reachabilityForInternetConnection]; NetworkStatus networkStatus = [reachability currentReachabilityStatus]; return !(networkStatus == NotReachable); }
-* — (BOOL) connectedToInternet { NSString *URLString = [NSString stringWithContentsOfURL:[NSURL URLWithString:@»http://www.google.com»]]; return ( URLString != NULL ) ? YES : NO; }
-* — (BOOL) connectedToInternet { NSURL *URLString = [NSURL URLWithString:@»http://www.google.com»]; NSData *data = [NSData dataWithContentsOfURL:URLString]; if (data) return YES; else return NO; }
-* — (BOOL) connectedToInternet { NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL: [NSURL URLWithString:@»http://www.google.com/»]]; [request setHTTPMethod:@»HEAD»]; NSHTTPURLResponse *response; [NSURLConnection sendSynchronousRequest:request returningResponse:&response error: NULL]; return ([response statusCode] == 200) ? YES : NO; }
+* — (BOOL) connectedToInternet { NSString *URLString = [NSString stringWithContentsOfURL:[NSURL URLWithString:@"http://www.google.com"]]; return ( URLString != NULL ) ? YES : NO; }
+* — (BOOL) connectedToInternet { NSURL *URLString = [NSURL URLWithString:@"http://www.google.com"]; NSData *data = [NSData dataWithContentsOfURL:URLString]; if (data) return YES; else return NO; }
+* — (BOOL) connectedToInternet { NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL: [NSURL URLWithString:@"http://www.google.com/"]]; [request setHTTPMethod:@"HEAD"]; NSHTTPURLResponse *response; [NSURLConnection sendSynchronousRequest:request returningResponse:&response error: NULL]; return ([response statusCode] == 200) ? YES : NO; }
 
 44. What gets returned if XIB is not properly connected to a parent controller?
 Answers:
@@ -328,7 +328,7 @@ Answers:
 * if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone5)
 * if([[UIScreen mainScreen] bounds].size.height == 568)
 * if([[UIScreen mainScreen] bounds].size.height == 1136)
-* if([[UIDevice currentDevice].model isEqualToString:@»iPhone5″])
+* if([[UIDevice currentDevice].model isEqualToString:@"iPhone5″])
 
 46. Which of the following is not a valid Touch method with respect to Cocoa Touch programming?
 Answers:
@@ -353,20 +353,20 @@ Answers:
 
 49. Which of the following correctly sets an image on UIButton?
 Answers:
-* button.image = [UIImage imageNamed:@»button_img.png»];
-* button.imageView.image = [UIImage imageNamed:@»button_img.png»];
-* [button setImage:[UIImage imageNamed:@»button_img.png»] forState:UIControlStateNormal];
-* [button setImageView:[UIImage imageNamed:@»button_img.png»] forState:UIControlStateNormal];
+* button.image = [UIImage imageNamed:@"button_img.png"];
+* button.imageView.image = [UIImage imageNamed:@"button_img.png"];
+* [button setImage:[UIImage imageNamed:@"button_img.png"] forState:UIControlStateNormal];
+* [button setImageView:[UIImage imageNamed:@"button_img.png"] forState:UIControlStateNormal];
 
 50. Which of the following is the best practice to find active internet connection?
 Answers:
 * — (BOOL) connectedToInternet { Reachability *reachability = [Reachability reachabilityForInternetConnection]; NetworkStatus networkStatus = [reachability currentReachabilityStatus]; return !(networkStatus == NotReachable); }
-* — (BOOL) connectedToInternet { NSString *URLString = [NSString stringWithContentsOfURL:[NSURL URLWithString:@»http://www.google.com»]]; return ( URLString != NULL ) ? YES : NO; }
-* — (BOOL) connectedToInternet { NSURL *URLString = [NSURL URLWithString:@»http://www.google.com»]; NSData *data = [NSData dataWithContentsOfURL:URLString]; if (data) return YES; else return NO; }
-* — (BOOL) connectedToInternet { NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL: [NSURL URLWithString:@»http://www.google.com/»]]; [request setHTTPMethod:@»HEAD»]; NSHTTPURLResponse *response; [NSURLConnection sendSynchronousRequest:request returningResponse:&response error: NULL]; return ([response statusCode] == 200) ? YES : NO; }
+* — (BOOL) connectedToInternet { NSString *URLString = [NSString stringWithContentsOfURL:[NSURL URLWithString:@"http://www.google.com"]]; return ( URLString != NULL ) ? YES : NO; }
+* — (BOOL) connectedToInternet { NSURL *URLString = [NSURL URLWithString:@"http://www.google.com"]; NSData *data = [NSData dataWithContentsOfURL:URLString]; if (data) return YES; else return NO; }
+* — (BOOL) connectedToInternet { NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL: [NSURL URLWithString:@"http://www.google.com/"]]; [request setHTTPMethod:@"HEAD"]; NSHTTPURLResponse *response; [NSURLConnection sendSynchronousRequest:request returningResponse:&response error: NULL]; return ([response statusCode] == 200) ? YES : NO; }
 
 51. What will be output of following code?
-NSLog(@»%.2f»,[[UIDevice currentDevice].systemVersion floatValue]);
+NSLog(@"%.2f",[[UIDevice currentDevice].systemVersion floatValue]);
 Answers:
 * 6.1.0
 * 6.1.2
@@ -403,29 +403,29 @@ Answers:
 
 56. Which of the following is the correct way to transfer data from one view controller to another?
 Answers:
-* EditingViewController *controller = [[EditingViewController alloc] initWithNibName:@»EditingView» bundle:nil]; controller.editedObject = book; … [self.navigationController pushViewController:controller animated:YES]; [controller release]; In the Editing View (EditingViewController): — (IBAction)save { … [editedObject setValue:datePicker.date forKey:editedFieldKey]; [editedObject setValue:textField.text forKey:editedFieldKey]; } [self.navigationController popViewControllerAnimated:YES]; }
+* EditingViewController *controller = [[EditingViewController alloc] initWithNibName:@"EditingView" bundle:nil]; controller.editedObject = book; … [self.navigationController pushViewController:controller animated:YES]; [controller release]; In the Editing View (EditingViewController): — (IBAction)save { … [editedObject setValue:datePicker.date forKey:editedFieldKey]; [editedObject setValue:textField.text forKey:editedFieldKey]; } [self.navigationController popViewControllerAnimated:YES]; }
 * NSString *commString; in appDelegate. And then when you submit the uitextfield value just assign that text field value to the appDelegate.commString use this in the next view. ProjectNameAppDelegate *appDelegate = [[UIApplication sharedApplicatoin] delegate]; appDelegate.commString = textField.text;
 * Both 1 and 2 methods are correct.
 * None of above are correct.
 
 57. Which of the following is the correct way to set the Navigation Bar Color of the Tab Bar Configure Menu?
 Answers:
-* «UINavigationController *navigationController; … navigationController.navigationBar.tintColor = [UIColor blackColor];»
-* «UINavigationController *navigationController; … navigationController.tintColor = [UIColor blackColor];»
-* «UINavigationController *navigationController; … navigationController.color = [UIColor blackColor];»
-* «UINavigationController *navigationController; … navigationController.navigationBar.Color = [UIColor blackColor];»
+* "UINavigationController *navigationController; … navigationController.navigationBar.tintColor = [UIColor blackColor];"
+* "UINavigationController *navigationController; … navigationController.tintColor = [UIColor blackColor];"
+* "UINavigationController *navigationController; … navigationController.color = [UIColor blackColor];"
+* "UINavigationController *navigationController; … navigationController.navigationBar.Color = [UIColor blackColor];"
 
 58. What does EXC_BAD_ACCESS signal received mean in Xcode?
 Answers:
 * Due to warning in code
-* «Owning» the memory but forgetting to release
+* "Owning" the memory but forgetting to release
 * Testing on a device without registering UDID
 * Using incorrect delegate methods
 
 59. How can an SMS be sent programmatically from the iPhone (iOS 4.0 or later)?
 Answers:
 * Using MFMessageComposeViewController
-* [[UIApplication sharedApplication] openURL: @»sms:PHONE-NUMBER»];
+* [[UIApplication sharedApplication] openURL: @"sms:PHONE-NUMBER"];
 * Both A &B are correct answers
 * The official SDK/Cocoa Touch doesn’t allow sending SMSs programmatically
 
@@ -458,7 +458,7 @@ Answers:
 * — (void) accelerometer:(UIAccelerometer *)accelerometer beginAccelerate:(UIAcceleration *)acceleration
 
 64. Which one is the best resolution for the following error?
-«A valid signing identity matching this profile could not be found in your keychain»
+"A valid signing identity matching this profile could not be found in your keychain"
 Answers:
 * Installing the certificate file in your keychain
 * Renewing your provisioning profile
@@ -472,7 +472,7 @@ Answers:
 * myLabel.numberOfLines = 0; CGRect currentFrame = myLabel.frame; CGSize max = CGSizeMake(myLabel.frame.size.width, 500); CGSize expected = [myString sizeWithFont:myLabel.font constrainedToSize:max lineBreakMode:myLabel.lineBreakMode]; currentFrame.size.height = expected.height; myLabel.frame = currentFrame;
 * You have to use UITextView for this purpose, otherwise Apple will rejects your app submission.
 
-66. What does a «__block» type specifier mean?
+66. What does a "__block" type specifier mean?
 Answers:
 * Modifications made with the variable marked with __block inside the block are not visible outside of it.
 * Modifications done with the variable marked with __block inside the block are also visible outside of it.
@@ -481,8 +481,8 @@ Answers:
 
 67. Which of the following code samples will declare a variable inside a block in Objective-C?
 Answers:
-* Person *aPerson = nil; [participants enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) { Person *participant = (Person*)obj; if ([participant.gender isEqualToString:@»M»]) { aPerson = participant; *stop = YES; } }]; return aPerson;
-* __block Person *aPerson = nil; [participants enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) { Person *participant = (Person*)obj; if ([participant.gender isEqualToString:@»M»]) { aPerson = participant; *stop = YES; } }]; return aPerson;
-* [participants enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) { Person *participant = (Person*)obj; Person *aPerson = nil; if ([participant.gender isEqualToString:@»M»]) { aPerson = participant; *stop = YES; } }]; return aPerson;
+* Person *aPerson = nil; [participants enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) { Person *participant = (Person*)obj; if ([participant.gender isEqualToString:@"M"]) { aPerson = participant; *stop = YES; } }]; return aPerson;
+* __block Person *aPerson = nil; [participants enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) { Person *participant = (Person*)obj; if ([participant.gender isEqualToString:@"M"]) { aPerson = participant; *stop = YES; } }]; return aPerson;
+* [participants enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) { Person *participant = (Person*)obj; Person *aPerson = nil; if ([participant.gender isEqualToString:@"M"]) { aPerson = participant; *stop = YES; } }]; return aPerson;
 * All of the above.
 
