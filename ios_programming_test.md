@@ -1,46 +1,46 @@
 # UPWORK IOS PROGRAMMING TEST 2016
 
 1. Which of the following is the correct way to set the font size of UIButton title label?
-Answers:
-* someButton.font = [UIFont systemFontOfSize: 15];
-* someButton.titleLabel.font = [UIFont systemFontOfSize: 15];
-* [someButton setFont: [UIFont systemFontOfSize: 15]];
-* All of the above
+  Answers:
+  * someButton.font = [UIFont systemFontOfSize: 15];
+  * someButton.titleLabel.font = [UIFont systemFontOfSize: 15];
+  * [someButton setFont: [UIFont systemFontOfSize: 15]];
+  * All of the above
 
 2. Which of the following frameworks is needed to apply a border to an object?
-Answers:
-* UIKit
-* CoreGraphics
-* QuartzCore
-* Foundation
+  Answers:
+  * UIKit
+  * CoreGraphics
+  * QuartzCore
+  * Foundation
 
 3. What is the maximum size of an iOS application?
-Answers:
-* 20 MB
-* 50 MB
-* 1 GB
-* 2 GB
+  Answers:
+  * 20 MB
+  * 50 MB
+  * 1 GB
+  * 2 GB
 
 4. Which of the following will set an image on UIButton?
-Answers:
-* button.image = [UIImage imageNamed:@»btn_img.png»];
-* button.imageView.image = [UIImage imageNamed:@»btn_img.png»];
-* [button setImage:[UIImage imageNamed:@»btn_img.png»] forState:UIControlStateNormal];
-* [button setImageView:[UIImage imageNamed:@»btn_img.png»] forState:UIControlStateNormal];
+  Answers:
+  * button.image = [UIImage imageNamed:@»btn_img.png»];
+  * button.imageView.image = [UIImage imageNamed:@»btn_img.png»];
+  * [button setImage:[UIImage imageNamed:@»btn_img.png»] forState:UIControlStateNormal];
+  * [button setImageView:[UIImage imageNamed:@»btn_img.png»] forState:UIControlStateNormal];
 
 5. Which of the following is the best way to add a UIToolbar above keyboard?
-Answers:
-* -(void)keyboardWillShow:(NSNotification *)notification { [self.view addSubview:toolbar]; }
-* -(void)textFieldDidBeginEditing:(UITextField *)textField { [self.view addSubview:toolbar]; }
-* Always keep UIToolBar visible on screen.
-* -(void)keyboardWillHide:(NSNotification *)notification { [self.view addSubview:toolbar]; }
+  Answers:
+  * -(void)keyboardWillShow:(NSNotification *)notification { [self.view addSubview:toolbar]; }
+  * -(void)textFieldDidBeginEditing:(UITextField *)textField { [self.view addSubview:toolbar]; }
+  * Always keep UIToolBar visible on screen.
+  * -(void)keyboardWillHide:(NSNotification *)notification { [self.view addSubview:toolbar]; }
 
 6. Select all incorrect bundle ID(s):
-Answers:
-* com.company.appName
-* com.appName
-* appName
-* com.company-name.app-name
+  Answers:
+  * com.company.appName
+  * com.appName
+  * appName
+  * com.company-name.app-name
 
 7. Which one is true regarding integrating and using custom fonts in an iOS application?
 Answers:
