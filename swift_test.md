@@ -445,10 +445,10 @@
   //closure’s body goes here
   )
 
-28. How could the following closure be rewritten to use shorthand arguments? s2 } )  
+28. How could the following closure be rewritten to use shorthand arguments? s2 } ) > 
   Answers:
   * reversed = sorted(names, { $0 ,$1 in $0 &gt; $1 } )
-  * reversed = sorted(names, { $0 &gt; $1 } )
+  * **reversed = sorted(names, { $0 &gt; $1 } )**
   * reversed = sorted(names, { $0 ,$1 } )
   * reversed = sorted( { $0 &gt; $1 } )
 
@@ -876,9 +876,9 @@
   * var
   * property
 
-102. What is the output of this segment of code:
+102. What is the output of this segment of code
   >var x = 0
-  for index in 1…5 {
+  for index in 1...5 {
   ++x
   }
   print("\(x)")
@@ -902,3 +902,35 @@
   * interface
   * struct
   * class
+
+1. Which of these statements declares cityArray as a mutable array?                         
+                                
+* let cityArray = ["Portland","San Francisco","Cupertino"]
+* let cityArray = [String]()
+* var cityArray = ["Portland","San Francisco","Cupertino"]
+* var cityArray = ["OR" : "Portland", "CA" : "San Francisco"]
+            
+                    
+2. Which of these collection types is not included by default in standard Swift?
+                                
+* Set
+* Array
+* Dictionary
+* NA
+               
+                 
+3. What happens when Swifts String, Array, and Dictionary objects are assigned to a new constant or variable?
+                                
+* They are copied.
+* They are always assigned and passed around as a reference to an existing instance.
+* They are assigned or copied according to the variable definition.
+              
+                  
+4. What is the most basic difference between Value and Reference types?
+                                
+* Copying Value type creates an shared instance where Reference type creates independent instance
+* Value type instance share a single copy of the data where Reference type instances keeps a unique copy of its data
+* Assigning a Value type to a new variable copies its contents to a new instance, where Reference types do not.
+                                
+
+
