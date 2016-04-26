@@ -4,7 +4,7 @@
 1. What is the correct way to fix if checking the status of the GPS_PROVIDER throws SecurityException?  
   Answers:
   * request permission for ACCESS_COARSE_LOCATION
-  * request permission for ACCESS_FINE_LOCATION
+  * **request permission for ACCESS_FINE_LOCATION**
   * request permission for INSTALL_LOCATION_PROVIDER
   * None of the above
 
@@ -13,10 +13,11 @@
   mp.setDataSource(PATH_TO_FILE);  
   &#60;Some code here>  
   mp.start();  
+  
   Which of the following should be placed at &#60;Some code here>?  
   
   Answers:
-  * mp.prepare();
+  * **mp.prepare();**
   * mp.prepareAsync();
   * mp.loadMedia();
   * mp.loadSource();
@@ -26,7 +27,7 @@
 3. Which of the following would you have to include in your project to use the APIs and classes required to access the camera on the mobile device?  
   Answers:
   * import android.drivers;
-  * import android.hardware.camera;
+  * **import android.hardware.camera;**
   * import android.camera;
   * import android.util;
   * import android.hardware;
@@ -36,24 +37,24 @@
   * Save a phone number to the contacts in the phone device.
   * Retrieve a phone number from the contacts in the phone device.
   * Delete a phone number from the contacts in the phone device.
-  * Format an international telephone number.
+  * **Format an international telephone number.**
   * Setting and retrieving the call forwarding phone number on the phone device.
 
 5. Which of the following are UI elements that you can use in a window in an Android application?
   Answers:
   * TextBox
-  * TextView
+  * **TextView**
   * TextField
   * TextElement
-  * EditText
+  * **EditText**
   * RichText
 
 6. Which of the following is not Content Provider?  
   Answers:
-  * Contacts
-  * Contacts
+  * **Contacts**
+  * **Contacts**
   * Shared Preferences
-  * MediaStore
+  * **MediaStore**
   * Bookmarks
   * Settings
 
@@ -65,7 +66,7 @@
   }  
   
   Answers:
-  * prints names of all available sensors in device
+  * **prints names of all available sensors in device**
   * prints names of all available sensor types in device
   * prints names of all sensors which are not available
   * none of above
@@ -74,12 +75,12 @@
   Answers:
   * AsyncTask
   * IntentService
-  * Sync adapters
+  * **Sync adapters**
   * All of these
 
 9. What is the ListActivity class used for?  
   Answers:
-  * Create a view to display a list of items from a data source.
+  * **Create a view to display a list of items from a data source.**
   * List all the activities currently running on the Android device.
   * List all the activites that are installed on the Android device.
   * List the activities whose IntentFilters match with a particular Intent type.
@@ -87,23 +88,23 @@
 10. Which of the following would you have to include in your project to use the SimpleAdapter class?  
   Answers:
   * import android.content;
-  * import android.widget;
+  * **import android.widget;**
   * import android.database;
   * import android.database.sqlite;
   * import android.util;
 
 11. Which of the following is the best way to request user permission if an Android application receives location updates from both NETWORK_PROVIDER and GPS_PROVIDER?  
   Answers:
-  * Adding this line to the Android manifest file: &#60;uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  * **Adding this line to the Android manifest file: &#60;uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />**
   * Adding these two lines to the Android manifest file: &#60;uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> &#60;uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-  * Adding this line to the Android manifest file: &#60;uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  * **Adding this line to the Android manifest file: &#60;uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />**
   * Adding this line to the Android manifest file: &#60;uses-permission android:name="android.permission.CONTROL_LOCATION_UPDATES" />
 
 12. Which of the following can you use to display an HTML web page in an Android application?  
   Answers:
   * WebBrowser
   * BrowserView
-  * WebView
+  * **WebView**
   * Browser
   * HtmlView
 
@@ -113,7 +114,7 @@
   c) When releasing application special debug key that is created by the Android SDK build tools can be used.  
   Answers:
   * a) and b) are true
-  * a) and c) are true
+  * **a) and c) are true**
   * b) and c) are true
   * all statements are true
 
@@ -121,7 +122,7 @@
   Answers:
   * Application
   * ApplicationContext
-  * Context
+  * **Context**
   * Component
   * Object
 
@@ -129,20 +130,20 @@
   Answers:
   * StrictMode detects improper layouts
   * StrictMode detects operation which blocks UI
-  * StrictMode detects the speed of the connection
+  * **StrictMode detects the speed of the connection**
   * All of the above
 
 16. Which of the following is/are appropriate for saving the state of an Android application?  
   Answers:
   * Activity.onFreeze()
-  * Activity.onPause()
+  * **Activity.onPause()**
   * Activity.onStop()
   * Activity.onDestroy()
 
 17. Which of the following are true about enabling/disabling menu items from an Activity class?  
   Answers:
   * onCreateOptionsMenu can be used to enable/disable some menu items in an Android application.
-  * onPrepareOptionsMenu can be used to enable/disable some menu items in an Android application.
+  * **onPrepareOptionsMenu can be used to enable/disable some menu items in an Android application.**
   * onShowOptionsMenu can be used to enable/disable some menu items in an Android application.
   * The menu items in an Android application cannot be disabled.
 
@@ -154,7 +155,7 @@
   Answers:
   * a, b and c
   * b, c and d
-  * all of these
+  * **all of these**
   * none of these
 
 19. What does the following code do?
@@ -170,14 +171,14 @@
   }  
   
   Answers:
-  * prints token
+  * **prints token**
   * prints IOException
   * prints UserRecoverableAuthException
   * prints GoogleAuthException
 
 20. Which of the following should be used to save the unsaved data and release resources being used by an Android application?  
   Answers:
-  * Activity.onStop()
+  * **Activity.onStop()**
   * Activity.onPause()
   * Activity.onDestroy()
   * Activity.onShutdown()
@@ -185,12 +186,12 @@
 
 21. Which of the following are true?  
   Answers:
-  * startActivity and startActivityForResult can both be used to start a new activity from your activity class.
+  * **startActivity and startActivityForResult can both be used to start a new activity from your activity class.**
   * Only startActivityForResult can be used to launch a new activity from your activity class.
-  * startActivity(myIntent); and startActivityForResult(myIntent, -1); have the same result.
+  * **startActivity(myIntent); and startActivityForResult(myIntent, -1); have the same result.**
   * startActivity(myIntent); and startActivityForResult(myIntent, 0); have the same result.
   * When startActivity is used to launch a new activity from your activity class then your activity class gets notified when the new activity is completed.
-  * When startActivityForResult is used to launch a new activity from your activity class then your activity class gets notified when the new activity is completed.
+  * **When startActivityForResult is used to launch a new activity from your activity class then your activity class gets notified when the new activity is completed.**
 
 22. Consider the XML fragment below, which is taken from one of the files in an Android project:  
   >&#60;MyElement xmlns:"http://schemas.androd.com/apk/res/android"  
@@ -206,30 +207,30 @@
   * It is taken from the package file (.apk) of the Android project.
   * The xmlns: attribute is a compulsory attribute.
   * If this is not the outer most tag in the XML file then it need not contain the xmlns: attribute.
-  * MyElement should be the name of a class derived, directly or indirectly, from the View class.
+  * **MyElement should be the name of a class derived, directly or indirectly, from the View class.**
 
 23. Which of the following are true about Intent.CALL_ACTION and Intent.DIAL_ACTION?  
   Answers:
-  * Both of them are used to dial a phone number on the device.
+  * **Both of them are used to dial a phone number on the device.**
   * Intent.action == Intent.CALL_ACTION is true when a phone call is received on the device.
-  * Intent.action = Intent.CALL_ACTION is used when a phone number is to be dialled without showing a UI on the device.
+  * **Intent.action = Intent.CALL_ACTION is used when a phone number is to be dialled without showing a UI on the device.**
   * Intent.action = Intent.DIAL_ACTION is used when a phone number is to be dialled without showing a UI on the device.
   * Intent.action = Intent.CALL_ACTION is used when a phone number is to be dialled without the user having to explicitly initiate the call.
-  * Intent.action = Intent.DIAL_ACTION is used when a phone number is to be dialled without the user having to explicitly initiate the call.
+  * **Intent.action = Intent.DIAL_ACTION is used when a phone number is to be dialled without the user having to explicitly initiate the call.**
 
 24. Suppose Screen1 is the main screen of an Android application MyAndroid. Now if another screen, Screen2 has to be opened from Screen1, then which of the following are true?  
   Answers:
   * Screen2 has to be a part of MyAndroid.
-  * Screen2 can exist in any other Android application installed on the device.
+  * **Screen2 can exist in any other Android application installed on the device.**
   * Screen2 will always be launched asynchronously.
-  * Screen2 can be launched synchronously.
+  * **Screen2 can be launched synchronously.**
   * Screen2 can return a result code to Screen1 if launched with startActivity.
-  * Screen2 can return a result code to Screen1 if launched with startActivityForResult.
+  * **Screen2 can return a result code to Screen1 if launched with startActivityForResult.**
 
 25. What is the best way of opening camera as sub-activity?  
   Answers:
   * Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE); startActivity(takePictureIntent);
-  * Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE); if (takePictureIntent.resolveActivity(getPackageManager()) != null) { startActivityForResult(takePictureIntent, 1); }
+  * **Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE); if (takePictureIntent.resolveActivity(getPackageManager()) != null) { startActivityForResult(takePictureIntent, 1); }**
   * Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE); startActivityForResult(takePictureIntent, 1);
   * Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE); if (takePictureIntent.resolveActivity(getPackageManager()) != null) { startActivityForResult(takePictureIntent, -1); }
 
