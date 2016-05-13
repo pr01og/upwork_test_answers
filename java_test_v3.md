@@ -139,14 +139,14 @@
   * **any of the following: XYZ, XZY, YXZ, YZX, ZXY, ZYX**
   * any of the following: XYZ, ZYX
 
-16. Which of the following require explicit try/catch exception handling by the programmer?
+16. Which of the following require explicit try/catch exception handling by the programmer?  
   Answers:
   * Accessing a method in another class
   * **Attempting to open a network socket**
   * **Attempting to open a file**
   * Traversing each member of an array
 
-17. What protocol is used by the DatagramSocket class?
+17. What protocol is used by the DatagramSocket class?  
   Answers:
   * STCP
   * **UDP**
@@ -154,7 +154,7 @@
   * FTP
   * None of the above
 
-18. What should be the replacement of «//ABC» in the following code?
+18. What should be the replacement of «//ABC» in the following code?  
   `class Krit {`  
   `  String str= new String(«OOPS !!! JAVA»);`  
   `  public void KritMethod(final int iArgs) {`  
@@ -175,7 +175,7 @@
   * System.out.print(iTwo);
   * System.out.print(iArgs);
 
-19. What is the output of the given program?
+19. What is the output of the given program?  
   `public class Test117 {`  
   `  {`  
   `  System.out.print("_INIT");`  
@@ -205,14 +205,14 @@
   * `<yourLibrary.whatColorlslt color="red"/>`
   
 21. Why would the following code snippet not compile successfully?  
-  `if (mangoList instanceof List<Mango>) { System.out.println("true"); }`
-  Answers:
+  `if (mangoList instanceof List<Mango>) { System.out.println("true"); }`  
+Answers:
   * It is unknown whether mangoList is a List type.
   * **Generic types are erased before runtime.**
   * The instanceof keyword only works on primitive types.
 
-22. Choose all valid forms of the argument list for the FileOutputStream constructor shown below:
-  Answers:
+22. Choose all valid forms of the argument list for the FileOutputStream constructor shown below:  
+Answers:
   * **FileOutputStream( FileDescriptor fd )**
   * **FileOutputStream( String n, boolean a )**
   * FileOutputStream( boolean a )
@@ -228,28 +228,28 @@
   * **java.lang.Float**
 
 24. Which of the following illustrates correct synchronization syntax?  
-  Answers:
+Answers:
   * public synchronized void Process(void){}
   * public void Process(){ synchronized(this){ } }
   * public void synchronized Process(){}
   * **public synchronized void Process(){}**
 
 25. With regard to the destroy lifecycle method, identify the correct statements about its purpose or about how and when it is invoked.
-  Note: There may be more than one right answer.
-  Answers:
+  Note: There may be more than one right answer.  
+Answers:
   * **It gives the servlet an opportunity to clean up resources.**
   * Like try-catch, it is called upon an exception.
   * It is rarely used but can be called to remove a servlet from memory.
   * It isn’t called if the server crashes.
 
-26. Which of these interfaces are used by implementations of models for JTable?
+26. Which of these interfaces are used by implementations of models for JTable?  
   Answers:
   * **TableModel**
   * TableColumnModel
   * TableSelectionModel
   * ListModel
 
-27. Which of the following is the correct syntax for creating a Session object?
+27. Which of the following is the correct syntax for creating a Session object?  
   Answers:
   * HttpSession ses=request.getSession(true);
   * HttpSession ses=getSession(true);
@@ -257,7 +257,7 @@
   * HttpSession ses=request.getSessionObject(true);
   * HttpSession ses=response.getSession(true);
 
-28. Which of the following symbols are metacharacters supported by the java.util.regex API?
+28. Which of the following symbols are metacharacters supported by the java.util.regex API?  
   Answers:
   * **.** (right answer)
   * \
@@ -341,7 +341,7 @@
   * **`List<Integer> input = null;
   List<Integer> output = null;`**
 
-35. Which is the right syntax of a javadoc comment for parameter of the method test(int)?
+35. Which is the right syntax of a javadoc comment for parameter of the method test(int)?  
   `public class Test125 {
   public static void main(String[] args) {
   new Test125().test(125);
@@ -435,7 +435,7 @@
   l.add(a, s.getBytes(«UTF-8»)[2]);
   System.out.println(l);
   }
-  }`
+  }`  
   Answers:
   * [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
   * **[0, 1, 2, 3, 4, 5, 6, 108, 7, 8, 9]**
@@ -543,7 +543,7 @@
   * Their execution will be halted temporarily
   * None of the above
 
-50. With regard to the servlet context listener, which of the following methods is valid?
+50. With regard to the servlet context listener, which of the following methods is valid?  
   Answers:
   * contextListenerEvent
   * **contextListenerInitialized**
@@ -566,7 +566,7 @@
   continue top;  
   }  
   }  
-  }
+  }  
   
   Answers:
   * **The code will compile but will not output anything at runtime**
@@ -715,7 +715,7 @@
   * stub method
   * raw method
 
-72. What is the output of the given console application?
+72. What is the output of the given console application?  
 >public class Test31 {  
 >public static void main(String[] args) {  
 >test();  
@@ -737,3 +737,159 @@
   * -try-catch
   * **-try-finally**
   * -try-catch-finally
+
+1. Which of the following methods will cause a thread to stop?  
+
+  Answers:
+  * Invoking the interrupt() method of the thread.
+  * Invoking the sleep() method of the thread.
+  * When execution of the run() method ends.
+  * None of these.
+
+2. What will be the output when this code is compiled and run?  
+>public class Test {  
+>
+>public Test() {  
+>Bar b = new Bar();  
+>Bar b1 = new Bar();  
+>update(b);  
+>update(b1);  
+>b1 = b;  
+>update(b);  
+>update(b1);  
+>}
+>
+>private void update(Bar bar) {  
+>bar.x = 20;  
+>System.out.println(bar.x);  
+>}
+>
+>public static void main(String args[]) {  
+>new Test();  
+>}
+>
+>private class Bar {  
+>int x = 10;  
+>}
+>}  
+
+  Answers:
+  * The code will fail to compile.
+  * 10 10 10 10
+  * 20 20 20 20
+  * 10 20 10 20
+
+3. Select the correct option based upon the following sample code:  
+>public class Test {  
+>static int a;  
+>int b;  
+>public Test() {  
+>int c;  
+>c = a;  
+>a++;  
+>b += c;  
+>System.out.println("one”);  
+>}
+>
+>public void Test() {  
+>int c;  
+>c = a;  
+>a++;  
+>b += c;  
+>System.out.println("two”);  
+>}
+>
+>public static void main(String args[]) {  
+>Test t = new Test();  
+>}  
+
+  Answers:
+  * The code will fail to compile because there is a method with the same name as the class name.
+  * The code will fail to compile because there are 2 constructors with the same names and parameters.
+  * The code will fail to compile because the constructor is trying to access a static variable.
+  * The code will compile but will fail when run.
+  * The code will compile and run successfully. It will print "one".
+  * I The code will compile and run successfully. It will print "two”.
+
+4. What will be written to the standard output when the following program is run?
+>public class X {  
+>public static void main(String args[]) {
+>System.out.println(11 ^ 2);  
+>}  
+>}  
+
+  Answers:
+  * 10
+  * 9
+  * 11
+  * 13
+  * 121
+
+5. An online shop employs a stateless session bean (named 'Eshop') to process the requests. Eshop' uses a declarative transaction management system. The following code is from the XML deployment descriptor file of the bean:  
+  >1. <ejb-jar>
+  2. (enterprise-beans)
+  3. <session>
+  4. <ejb-name>Eshop</ejb-name>
+  5. <home>com.solution.Eshopflome</home>
+  6. <remote>com.solution.Eshop</remote>
+  7. <local-home>com.solution.EshopLocalHome<llocal-home>
+  8. <local>com.solution.EshopLocal</local>
+  9. <ejb-class>com.solution.EshopBean</ejb-class>
+  10.
+  11.
+  12. </session>
+  13. </enterprise-beans>
+  14. </ejb-jar>  
+
+The session and transaction attributes are to be coded in the lines numbered 10 and 11.
+Which of the following options should be used to make the bean work as expected?  
+  Answers:
+  * <session>Stateless<lsession>
+  <transaction>Container</transaction>
+  * <session>Stateful<lsession>
+  <transaction>Bean</transaction>
+  * <session-type>Stateless<lsession-type>
+  <transaction-type>Container</transaction-type>
+  * <session-type>Stateful</session-type>
+  <transaction-type>Bean</transaction-type>
+  * <session-type>Stateless<lsession-type>
+  <transaction>Container</transaction>
+
+6. Which of the following code snippets will take transform input string "2012/06/05" to output string "05 - 06 - 2012"?  
+  Answers:
+  * String dateString = "2012/06/05";
+  Date date = new SimpleDateFormat("yyyy/MM/dd").parse(dateString);
+  SimpleDateFormat sdf = new SimpleDatePormat(“dd - MM - yyyy“);
+  System.out.println(sdf.format(date));
+  * String dateString = "2012/06/05";
+  Date date = new SimpleDateFormat("yyyy/MM/dd").format(dateString);
+  SimpleDateFormat sdf = new SimpleDatePormat(“dd - MM - yyyy“);
+  System.out.println(sdf.parse(date));
+  * String dateString = "2012/06/05";
+  Date date = new SimpleDateFormat("dd - MM - yyyy").format(dateString);
+  SimpleDateFormat sdf = new SimpleDatePormat(“yyyy/MM/dd”);
+  System.out.println(sdf.parse(date));
+  * String dateString = "2012/06/05";
+  Date date = new SimpleDateFormat("dd - MM - yyyy").parse(dateString);
+  SimpleDateFormat sdf = new SimpleDatePormat(“yyyy/MM/dd”);
+  System.out.println(sdf.format(date));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
