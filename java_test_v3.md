@@ -91,7 +91,7 @@
   Answers:
   * String value=req.getInitParameter(10);
   * String value=req.getInitParameter(«product»);
-  * String value=res.getParameter(«product»);
+  * __String value=res.getParameter(«product»)__;
   * __String value=req.getParameter(«product»);
 
 13. Which of the following is the correct syntax for suggesting that the JVM perform garbage collection?  
